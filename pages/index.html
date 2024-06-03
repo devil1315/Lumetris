@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Lumetris</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="loader-wrapper" id="loader-wrapper">
+        <div class="spinner">
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+            <div class="r4"></div>
+            <div class="r5"></div>
+        </div>
+    </div>
+
+
+    <section class="lumetris-nav">
+        <div class="container g-0">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <a class="navbar-brand navbar-logo" href="index.html">
+                        <img src="../assets/images/logo.svg" alt="" class="img-fluid">
+                    </a>
+                    <button class="navbar-toggler" style="padding: 10px;border: 1px solid rgb(255 255 255 / 15%);"
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header justify-content-between">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                                <a class="navbar-brand navbar-logo" href="#">
+                                    <img src="../assets/images/logo.svg" alt="" class="img-fluid">
+                                </a>
+                            </h5>
+                            <a href="#" class="text-white" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="offcanvas-body position-relative">
+                            <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item me-32">
+                                        <a class="nav-link active" aria-current="page" href="#">All Tutorials</a>
+                                    </li>
+                                    <li class="nav-item me-32">
+                                        <a class="nav-link" href="#">Scene Frames</a>
+                                    </li>
+                                    <form class="d-flex" role="search">
+                                        <button class="btn-accent btn-login" data-bs-toggle="modal"
+                                            data-bs-target="#login" type="button">Login or
+                                            Register</button>
+                                    </form>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </section>
+
+    <section class="hero-section">
+        <div class="container">
+            <div class="hero-content">
+                <p class="mb-0">Unleash Your Creativity</p>
+                <h1 class="mb-40">Empowering Content <br> Creators and Videographers</h1>
+                <form action="" class="position-relative searchform">
+                    <input type="search" placeholder="Search 8,000+ tutorials..." class="search-input pe-5">
+                    <a href="#" class="searchIcon">
+                        <i class="fa fa-search"></i>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section class="library py-50">
+        <div class="container">
+            <div class="library-details">
+                <div class="breadcrum text-center mb-48">
+                    <p class="mb-0">Over 8,000 Tutorials Spanning Across 10+ Categories</p>
+                    <h4>Explore Our Extensive Tutorial Library</h4>
+                </div>
+                <div class="row">
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                        <div class="category position-relative">
+                            <a href="">
+                                <div class="category-image">
+                                    <img src="../assets/images/category/category-1.png" class="img-fluid" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                            </a>
+                            <div class="social-heart">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="#">
+                                    <h6>Mastering Cinematic Transitions: Elevate Your Video Editing Skills</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                        <div class="category position-relative">
+                            <a href="">
+                                <div class="category-image">
+                                    <img src="../assets/images/category/category-2.png" class="img-fluid" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                            </a>
+                            <div class="social-heart">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="#">
+                                    <h6>Mastering Cinematic Transitions: Elevate Your Video Editing Skills</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                        <div class="category position-relative">
+                            <a href="">
+                                <div class="category-image">
+                                    <img src="../assets/images/category/category-3.png" class="img-fluid" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                            </a>
+                            <div class="social-heart">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="#">
+                                    <h6>Mastering Cinematic Transitions: Elevate Your Video Editing Skills</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                        <div class="category position-relative">
+                            <a href="">
+                                <div class="category-image">
+                                    <img src="../assets/images/category/category-1.png" class="img-fluid" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                            </a>
+                            <div class="social-heart">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="#">
+                                    <h6>Mastering Cinematic Transitions: Elevate Your Video Editing Skills</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                        <div class="category position-relative">
+                            <a href="">
+                                <div class="category-image">
+                                    <img src="../assets/images/category/category-2.png" class="img-fluid" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                            </a>
+                            <div class="social-heart">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="#">
+                                    <h6>Mastering Cinematic Transitions: Elevate Your Video Editing Skills</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                        <div class="category position-relative">
+                            <a href="">
+                                <div class="category-image">
+                                    <img src="../assets/images/category/category-3.png" class="img-fluid" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                            </a>
+                            <div class="social-heart">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="#">
+                                    <h6>Mastering Cinematic Transitions: Elevate Your Video Editing Skills</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                        <div class="category position-relative">
+                            <a href="">
+                                <div class="category-image">
+                                    <img src="../assets/images/category/category-2.png" class="img-fluid" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                            </a>
+                            <div class="social-heart">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="#">
+                                    <h6>Mastering Cinematic Transitions: Elevate Your Video Editing Skills</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6 col-12 mb-4">
+                        <div class="category position-relative">
+                            <a href="">
+                                <div class="category-image">
+                                    <img src="../assets/images/category/category-3.png" class="img-fluid" alt="">
+                                    <div class="overlay"></div>
+                                </div>
+                            </a>
+                            <div class="social-heart">
+                                <a href="#"><i class="fa-regular fa-heart"></i></a>
+                            </div>
+                            <div class="category-content">
+                                <a href="#">
+                                    <h6>Mastering Cinematic Transitions: Elevate Your Video Editing Skills</h6>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="tutorial py-50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 ">
+                    <div class="section-details">
+                        <h4 class="mb-32">Step-by-Step Tutorials</h4>
+                        <p class="mb-0">Unlock your creative potential with our comprehensive and easy-to-follow
+                            tutorials. Whether
+                            you're a beginner or an experienced pro, our step-by-step guides will help you elevate your
+                            content creation game.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="tutorial-img text-center">
+                        <img src="../assets/images/tutorial-bg.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="videotips py-50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7 order-change">
+                    <div class="tutorial-img ">
+                        <img src="../assets/images/tips-bg.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+                <div class="col-lg-5 order-5">
+                    <div class="section-details">
+                        <h4 class="mb-32">Curated Videography Tips</h4>
+                        <p class="mb-0">Gain valuable insights and tricks of the trade from industry experts. Our
+                            carefully curated tips will enhance your videography skills and take your videos to new
+                            heights.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <section class="tutorial py-50">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5">
+                    <div class="section-details">
+                        <h4 class="mb-32">Regular Updates</h4>
+                        <p class="mb-0">Gain valuable insights and tricks of the trade from industry experts. Our
+                            carefully curated tips will enhance your videography skills and take your videos to new
+                            heights.</p>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="tutorial-img text-center">
+                        <img src="../assets/images/updates-bg.png" alt="" class="img-fluid">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer py-50 pb-4">
+        <div class="container">
+            <div class="footer-nav mb-48">
+                <div class="footer-logo">
+                    <img src="../assets/images/logo.svg" alt="">
+                </div>
+                <div class="footer-links">
+                    <ul class="ps-0">
+                        <li><a href="#">All Tutorials</a></li>
+                        <li><a href="#">ShotDeck</a></li>
+                        <li><button class="btn-accent btn-login" data-bs-toggle="modal" data-bs-target="#login"
+                                type="button">Login or
+                                Register</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-footer ">
+                <div class="socials">
+                    <a href="#">
+                        <div class="socialicon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="socialicon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="socialicon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="contacts">
+                    <div class="phone">
+                        <a href="#">+123 456 7890</a>
+                    </div>
+                    <div class="email">
+                        <a href="#">contact@lumetris.com</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="copyright">
+                <div class="copyright-text">
+                    <p>© <span id="year"></span> <a href="index.html">Lumeris</a>. All rights reserved</p>
+                </div>
+                <div class="payment-card">
+                    <a href="#">
+                        <img src="../assets/images/cards/mastercard.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/visa.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/americanexpress.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/phi.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/pay.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div class="modals-div">
+        <!-- login  -->
+        <div class="modal fade " id="login" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true"
+            role="dialog">
+
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content position-relative">
+                    <div class="closebtn">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="Lumetris-logo text-center mb-32">
+                            <img src="../assets/images/logo.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="login-details text-center">
+                            <h2 class="mb-32">Welcome to Lumetris</h2>
+                            <form action="" class="text-start">
+                                <div class="mb-16">
+                                    <input type="email" placeholder="Email" class="form-custom" id="email" name="email">
+                                </div>
+                                <div class="mb-24 position-relative">
+                                    <input type="password" placeholder="Password" class="form-custom pe-5" id="password"
+                                        name="password">
+                                    <span id="passwordeye" class="eyeicon"
+                                        onclick="togglePasswordVisibility('password', 'passwordeye')">
+                                        <i class="far fa-eye-slash"></i>
+                                    </span>
+                                </div>
+                                <div class="mb-32">
+                                    <button type="submit" class="btn-accent w-100">Login</button>
+                                </div>
+                                <div class="mb-32">
+                                    <div class="or-divider">Or login with your socials</div>
+                                </div>
+
+                            </form>
+                            <div class="button-container mb-48">
+                                <button class="social-button google">
+                                    <i class="fab fa-google"></i> Google
+                                </button>
+                                <button class="social-button facebook">
+                                    <i class="fab fa-facebook-f"></i> Facebook
+                                </button>
+                            </div>
+                            <div class="footer">
+                                <p>New to Lumetris? <a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#register">Register</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-- register  -->
+        <div class="modal fade " id="register" tabindex="-1" aria-labelledby="exampleModalCenterTitle" aria-modal="true"
+            role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content position-relative">
+                    <div class="closebtn">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="Lumetris-logo text-center mb-32">
+                            <img src="../assets/images/logo.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="login-details text-center">
+                            <h2 class="mb-32">Register to Lumetris</h2>
+                            <form action="" class="text-start">
+                                <div class="mb-16">
+                                    <input type="text" placeholder="Name" class="form-custom" id="name" name="name">
+                                </div>
+                                <div class="mb-16">
+                                    <input type="email" placeholder="Email" class="form-custom" id="email" name="email">
+                                </div>
+                                <div class="mb-16 position-relative">
+                                    <input type="password" placeholder="Password" class="form-custom pe-5" id="password"
+                                        name="password">
+                                    <span id="passwordeye" class="eyeicon"
+                                        onclick="togglePasswordVisibility('password', 'passwordeye')">
+                                        <i class="far fa-eye-slash"></i>
+                                    </span>
+                                </div>
+                                <div class="mb-24 position-relative">
+                                    <input type="password" placeholder="Password" class="form-custom pe-5"
+                                        id="cpassword" name="password">
+                                    <span id="cpasswordeye" class="eyeicon"
+                                        onclick="togglePasswordVisibility('cpassword', 'cpasswordeye')">
+                                        <i class="far fa-eye-slash"></i>
+                                    </span>
+                                </div>
+                                <div class="mb-32">
+                                    <button type="button" class="btn-accent w-100" data-bs-toggle="modal"
+                                        data-bs-target="#afteregister">Register</button>
+                                </div>
+                                <div class="mb-32">
+                                    <div class="or-divider">Or login with your socials</div>
+                                </div>
+
+                            </form>
+                            <div class="button-container mb-48">
+                                <button class="social-button google">
+                                    <i class="fab fa-google"></i> Google
+                                </button>
+                                <button class="social-button facebook">
+                                    <i class="fab fa-facebook-f"></i> Facebook
+                                </button>
+                            </div>
+                            <div class="footer">
+                                <p>Already have an account? <a href="#" data-bs-toggle="modal"
+                                        data-bs-target="#login">Login</a></p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- afterregister  -->
+        <div class="modal fade " id="afteregister" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+            aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content position-relative">
+                    <div class="closebtn">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="Lumetris-logo text-center mb-32">
+                            <img src="../assets/images/logo.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="login-details text-center">
+                            <h2 class="mb-16">Tell us more about you</h2>
+                            <p class="mb-32 sub-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vestibulum in
+                                neque
+                                eget risus.</p>
+                            <form action="" class="text-start">
+                                <div class="mb-16">
+                                    <select name="language" class="form-select select-custom" id="language">
+                                        <option value="" selected disabled hidden>Select language</option>
+                                        <option value="uk">English (UK)</option>
+                                        <option value="usa">English (USA)</option>
+                                    </select>
+                                </div>
+                                <div class="mb-24">
+                                    <select name="country" class="form-select select-custom" id="country">
+                                        <option value="" selected disabled hidden>Select Country</option>
+                                        <option value="swi">Switzerland</option>
+                                        <option value="par">Paris</option>
+                                    </select>
+                                </div>
+
+                                <div class="mb-32">
+                                    <button type="button" data-bs-toggle="modal" data-bs-target="#categoryselect"
+                                        class="btn-accent w-100">Continue</button>
+                                </div>
+                            </form>
+                            <div class="footer">
+                                <p>Back to <a href="#" data-bs-toggle="modal" data-bs-target="#register">Register?</a>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- select  -->
+        <div class="modal fade " id="categoryselect" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+            aria-modal="true" role="dialog">
+            <div class="modal-dialog modal-dialog-centered modal-lg">
+                <div class="modal-content position-relative">
+                    <div class="closebtn">
+                        <button type="button" data-bs-dismiss="modal" aria-label="Close">
+                            <i class="fa fa-times"></i>
+                        </button>
+                    </div>
+                    <div class="modal-body ">
+                        <div class="Lumetris-logo text-center mb-32">
+                            <img src="../assets/images/logo.svg" class="img-fluid" alt="">
+                        </div>
+                        <div class="login-details text-center">
+                            <h2 class="mb-16">What are you
+                                looking to learn?</h2>
+                            <p class="mb-32 sub-para">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                Vestibulum in
+                                neque eget risus.</p>
+                            <form action="" class="text-start">
+                                <div class="row mb-32">
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 position-relative">
+                                        <a href="#" class="selected-category">
+                                            <label for="checked1">
+                                                <div class="looking-process">
+                                                    <div class="looking-image">
+                                                        <img src="../assets/images/category/category-1.png"
+                                                            class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="selected-checkbox">
+                                                        <input type="checkbox" id="checked1">
+                                                    </div>
+                                                    <div class="looking-text">
+                                                        <h4>Video Editing</h4>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </a>
+                                    </div>
+                                    <div class="col-lg-4 col-md-6 col-sm-6 col-12 position-relative">
+                                        <a href="#" class="selected-category">
+                                            <label for="checked2">
+                                                <div class="looking-process">
+                                                    <div class="looking-image">
+                                                        <img src="../assets/images/category/category-1.png"
+                                                            class="img-fluid" alt="">
+                                                    </div>
+                                                    <div class="selected-checkbox">
+                                                        <input type="checkbox" id="checked2">
+                                                    </div>
+                                                    <div class="looking-text">
+                                                        <h4>Video Editing</h4>
+                                                    </div>
+                                                </div>
+                                            </label>
+                                        </a>
+                                    </div>
+                                </div>
+
+                                <div class="mb-32">
+                                    <button type="submit" class="btn-accent w-100">Continue</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/custom.js"></script>
+    <script>
+        function togglePasswordVisibility(inputId, eyeIconId) {
+            const passwordInput = document.getElementById(inputId);
+            const eyeIcon = document.getElementById(eyeIconId);
+
+            if (passwordInput.type == 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.innerHTML = '<i class="far fa-eye"></i>';
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.innerHTML = '<i class="far fa-eye-slash"></i>';
+            }
+        }
+    </script>
+</body>
+
+</html>

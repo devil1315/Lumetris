@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile | Lumetris</title>
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/fontawesome.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="loader-wrapper" id="loader-wrapper">
+        <div class="spinner">
+            <div class="r1"></div>
+            <div class="r2"></div>
+            <div class="r3"></div>
+            <div class="r4"></div>
+            <div class="r5"></div>
+        </div>
+    </div>
+
+
+    <section class="lumetris-nav" id="after-nav">
+        <div class="container g-0">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container-fluid">
+                    <div>
+                        <a class="navbar-brand navbar-logo" href="index.html">
+                            <img src="../assets/images/logo.svg" alt="" class="img-fluid">
+                        </a>
+                        <a href="create-tos.html" class="btn-accent btn-login" type="button"><i class="fa fa-plus"></i>
+                            <span class="create-text">Create</span>
+                        </a>
+                    </div>
+
+                    <button class="navbar-toggler" style="padding: 10px;border: 1px solid rgb(255 255 255 / 15%);"
+                        type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasExample"
+                        aria-controls="offcanvasExample">
+                        <i class="fa-solid fa-bars text-white"></i>
+                    </button>
+                    <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasExample"
+                        aria-labelledby="offcanvasExampleLabel">
+                        <div class="offcanvas-header justify-content-between">
+                            <h5 class="offcanvas-title" id="offcanvasExampleLabel">
+                                <a class="navbar-brand navbar-logo" href="#">
+                                    <img src="../assets/images/logo.svg" alt="" class="img-fluid">
+                                </a>
+                            </h5>
+                            <a href="#" class="text-white" data-bs-dismiss="offcanvas" aria-label="Close">
+                                <i class="fa fa-times"></i></a>
+                        </div>
+                        <div class="offcanvas-body position-relative">
+                            <div class="collapse navbar-collapse show" id="navbarSupportedContent">
+                                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                                    <li class="nav-item me-32">
+                                        <a class="nav-link active" aria-current="page"
+                                            href="afterlogin.html">Dashboard</a>
+                                    </li>
+                                    <li class="nav-item me-32">
+                                        <a class="nav-link" href="#">Scene Frames</a>
+                                    </li>
+                                </ul>
+                                <ul class="d-flex align-items-center mb-0 ps-0">
+                                    <li class="nav-item me-32">
+                                        <a class="nav-link" href="#"><i class="fa fa-bell"></i></a>
+                                    </li>
+                                    <li class="nav-item me-32">
+                                        <a class="nav-link" href="#"><i class="fa-solid fa-comments"></i></a>
+                                    </li>
+                                    <li class="nav-item me-32" id="profile">
+                                        <div class="dropdown">
+                                            <a class=" dropdown-toggle" type="button" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <img src="../assets/images/user/user-1.jpg" alt="">
+                                            </a>
+
+                                            <ul class="dropdown-menu shadow-sm" data-bs-toggle="dropdown"
+                                                aria-expanded="false">
+                                                <li><a href="profile.html" class="dropdown-item">My Profile</a></li>
+                                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                                <hr>
+                                                <li><a class="dropdown-item"
+                                                        href="./authentication/login.html">Logout</a></li>
+                                            </ul>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+            </nav>
+        </div>
+    </section>
+    <secion class="myprofile py-50" id="myprofile">
+        <div class="container">
+            <div class="row py-4">
+                <div class="col-lg-12">
+                    <div class="heroTab mb-5">
+                        <ul class="nav nav-pills mb-3 pb-3 justify-content-center" id="pills-tab" role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pills-updates-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-updates" type="button" role="tab"
+                                    aria-controls="pills-updates" aria-selected="true">Followers</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link " id="pills-tos-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pills-tos" type="button" role="tab" aria-controls="pills-tos"
+                                    aria-selected="false">Following</button>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="hero-tab-content">
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pills-updates" role="tabpanel"
+                                aria-labelledby="pills-updates-tab" tabindex="0">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7">
+                                        <div class="follower-list">
+                                            <ul class="ps-0 mb-0">
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="removefollow">Remove</a>
+                                                </li>
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="removefollow">Remove</a>
+                                                </li>
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="removefollow">Remove</a>
+                                                </li>
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="removefollow">Remove</a>
+                                                </li>
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="removefollow">Remove</a>
+                                                </li>
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="removefollow">Remove</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tab-pane fade " id="pills-tos" role="tabpanel" aria-labelledby="pills-tos-tab"
+                                tabindex="0">
+                                <div class="row justify-content-center">
+                                    <div class="col-lg-7">
+                                        <div class="follower-list">
+                                            <ul class="ps-0 mb-0">
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="btn-accent">Following</a>
+                                                </li>
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="btn-accent">Following</a>
+                                                </li>
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="btn-accent">Following</a>
+                                                </li>
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="btn-accent">Following</a>
+                                                </li>
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="btn-accent">Following</a>
+                                                </li>
+                                                <li class="d-flex justify-content-between align-items-center">
+                                                    <a href="userprofile.html">
+                                                        <div
+                                                            class="follower-image d-flex align-items-center gap-2 flex-nowrap">
+                                                            <img src="../assets/images/user/user-1.jpg" alt="">
+                                                            <div>
+                                                                <h5>Lily johansen</h5>
+                                                                <p>@lily</p>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                    <a href="#" class="btn-accent">Following</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </secion>
+
+    <footer class="footer py-50 pb-4 ">
+        <div class="container">
+            <div class="footer-nav mb-48">
+                <div class="footer-logo">
+                    <img src="../assets/images/logo.svg" alt="">
+                </div>
+                <div class="footer-links">
+                    <ul class="ps-0">
+                        <li><a href="#">All Tutorials</a></li>
+                        <li><a href="#">ShotDeck</a></li>
+                        <li><button class="btn-accent btn-login" data-bs-toggle="modal" data-bs-target="#login"
+                                type="button">Login or
+                                Register</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-footer ">
+                <div class="socials">
+                    <a href="#">
+                        <div class="socialicon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="socialicon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="socialicon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="contacts">
+                    <div class="phone">
+                        <a href="#">+123 456 7890</a>
+                    </div>
+                    <div class="email">
+                        <a href="#">contact@lumetris.com</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="copyright">
+                <div class="copyright-text">
+                    <p>© <span id="year"></span> <a href="index.html">Lumeris</a>. All rights reserved</p>
+                </div>
+                <div class="payment-card">
+                    <a href="#">
+                        <img src="../assets/images/cards/mastercard.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/visa.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/americanexpress.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/phi.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/pay.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../assets/js/jquery.js"></script>
+    <script src="../assets/js/bootstrap.bundle.js"></script>
+    <script src="../assets/js/custom.js"></script>
+</body>
+
+</html>

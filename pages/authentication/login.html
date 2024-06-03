@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login | Lumetris</title>
+    <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+    <link rel="stylesheet" href="../../assets/css/fontawesome.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+</head>
+
+<body>
+    <div class="modal fade show" id="exampleModalCenter" tabindex="-1" aria-labelledby="exampleModalCenterTitle"
+        style="display: block;" aria-modal="true" role="dialog">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+
+                <div class="modal-body ">
+                    <div class="Lumetris-logo text-center mb-32">
+                        <img src="../../assets/images/logo.svg" class="img-fluid" alt="">
+                    </div>
+                    <div class="login-details text-center">
+                        <h2 class="mb-32">Welcome to Lumetris</h2>
+                        <form action="" class="text-start">
+                            <div class="mb-16">
+                                <input type="email" placeholder="Email" class="form-custom" id="email" name="email">
+                            </div>
+                            <div class="mb-24 position-relative">
+                                <input type="password" placeholder="Password" class="form-custom pe-5" id="password"
+                                    name="password">
+                                <span id="passwordeye" class="eyeicon"
+                                    onclick="togglePasswordVisibility('password', 'passwordeye')">
+                                    <i class="far fa-eye-slash"></i>
+                                </span>
+                            </div>
+                            <div class="mb-32">
+                                <button type="submit" class="btn-accent w-100">Login</button>
+                            </div>
+                            <div class="mb-32">
+                                <div class="or-divider">Or login with your socials</div>
+                            </div>
+
+                        </form>
+                        <div class="button-container mb-48">
+                            <button class="social-button google">
+                                <i class="fab fa-google"></i> Google
+                            </button>
+                            <button class="social-button facebook">
+                                <i class="fab fa-facebook-f"></i> Facebook
+                            </button>
+                        </div>
+                        <div class="footer">
+                            <p>New to Lumetris? <a href="register.html">Register</a></p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <script src="../../assets/js/jquery.js"></script>
+    <script src="../../assets/js/bootstrap.bundle.js"></script>
+    <script src="../../assets/js/custom.js"></script>
+    <script>
+        function togglePasswordVisibility(inputId, eyeIconId) {
+            const passwordInput = document.getElementById(inputId);
+            const eyeIcon = document.getElementById(eyeIconId);
+
+            if (passwordInput.type == 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.innerHTML = '<i class="far fa-eye"></i>';
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.innerHTML = '<i class="far fa-eye-slash"></i>';
+            }
+        }
+    </script>
+</body>
+
+</html>
