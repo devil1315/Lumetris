@@ -32,7 +32,7 @@
                         <a class="navbar-brand navbar-logo" href="index.html">
                             <img src="../assets/images/logo.svg" alt="" class="img-fluid">
                         </a>
-                        <a href="#" class="btn-accent btn-login" type="button"><i class="fa fa-plus"></i>
+                        <a href="create-tos.html" class="btn-accent btn-login" type="button"><i class="fa fa-plus"></i>
                             <span class="create-text">Create</span>
                         </a>
                     </div>
@@ -61,7 +61,7 @@
                                             href="afterlogin.html">Dashboard</a>
                                     </li>
                                     <li class="nav-item me-32">
-                                        <a class="nav-link" href="#">Scene Frames</a>
+                                        <a class="nav-link" href="sframes.html">Scene Frames</a>
                                     </li>
                                 </ul>
                                 <ul class="d-flex align-items-center mb-0 ps-0">
@@ -130,7 +130,7 @@
                         </ul>
                     </div>
                     <div class="action-profile mb-16">
-                        <a href="#">
+                        <a href="#" id="request-send">
                             <div class="icon-custom">
                                 <i class="fa-solid fa-user-plus"></i>
                             </div>
@@ -150,6 +150,7 @@
                                 <i class="fa-solid fa-ellipsis"></i>
                             </div>
                         </a> -->
+
                         <div class="dropdown">
                             <a class=" dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                 <div class="icon-custom">
@@ -480,6 +481,15 @@
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <script src="../assets/js/custom.js"></script>
+    <script>
+        let clickbtn = document.querySelector('#request-send');
+
+        clickbtn.addEventListener('click', function () {
+            var iconchange = document.querySelector('#request-send i');
+            iconchange.classList.toggle('fa-user-plus');
+            iconchange.classList.toggle('fa-user-check');
+        });
+    </script>
 </body>
 
 </html>
