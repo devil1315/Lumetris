@@ -11,6 +11,12 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+<style>
+    .big-image img {
+        aspect-ratio: inherit;
+        height: 100%;
+    }
+</style>
 
 <body>
     <div class="loader-wrapper" id="loader-wrapper">
@@ -61,7 +67,7 @@
                                             href="afterlogin.html">Dashboard</a>
                                     </li>
                                     <li class="nav-item me-32">
-                                        <a class="nav-link" href="#">Scene Frames</a>
+                                        <a class="nav-link" href="sframes.html">Scene Frames</a>
                                     </li>
                                 </ul>
                                 <ul class="d-flex align-items-center mb-0 ps-0">
@@ -100,11 +106,12 @@
                 <div class="row">
                     <div class="col-lg-6">
                         <div class="row">
-                            <div class="col-lg-2">
+                            <div class="col-lg-2" id="small-append">
                                 <div class="small-thumb">
                                     <div class="col-lg-12 mb-2">
                                         <a href="#">
-                                            <img src="../assets/images/category/category-1.png" alt="">
+                                            <img src="../assets/images/category/category-1.png" class="thumbnail"
+                                                alt="">
                                         </a>
                                     </div>
                                 </div>
@@ -119,12 +126,15 @@
                                 </div>
                             </div>
                             <div class="col-lg-10">
-                                <div class="big-image">
-                                    <img src="../assets/images/category/category-1.png" class="img-fluid" alt="">
+                                <div class="big-image" id="big-image-container">
+                                    <img src="../assets/images/category/category-1.png"
+                                        class="img-fluid big-image-display" alt="">
                                 </div>
                             </div>
                         </div>
                     </div>
+
+
                     <div class="col-lg-6">
                         <label for="" class="desc-head mb-24">Description 1/1</label>
                         <div class="mb-16">
@@ -215,6 +225,111 @@
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <script src="../assets/js/custom.js"></script>
+    <!-- <script>
+        let plus = document.querySelector('#plus');
+        plus.addEventListener('click', function () {
+            const appendcontainer = document.querySelector('#small-append');
+            let count = appendcontainer.querySelectorAll('.small-thumb').length - 1;
+            if (count < 3) {
+                let div = document.createElement('div');
+                div.classList = 'small-thumb append-new mb-2';
+                div.innerHTML = `
+                    <div class="col-lg-12 mb-2">
+                        <a href="#" id="image-file" >
+                            <img src="" alt="" style="display:none;">
+                        </a>
+                        <label href="#" class="add-icon w-100">
+                            <div class="add-plus d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-images"></i>
+                            </div>
+                            <input type="file" hidden>
+                        </label>
+                    </div>
+                `;
+                appendcontainer.insertBefore(div, plus);
+
+                let fileInput = div.querySelector('.add-icon input[type="file"]');
+                let addIconLabel = div.querySelector('.add-icon');
+
+                fileInput.addEventListener('change', function (event) {
+                    const file = event.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            const img = div.querySelector('#image-file img');
+                            img.src = e.target.result;
+                            img.style.display = 'block'; // Show the image
+                            addIconLabel.style.display = 'none';
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+            } else {
+                alert('You can only add up to 3 items.');
+            }
+        });
+    </script> -->
+    <script>
+        let plus = document.querySelector('#plus');
+        plus.addEventListener('click', function () {
+            const appendcontainer = document.querySelector('#small-append');
+            let count = appendcontainer.querySelectorAll('.small-thumb').length - 1;
+            if (count < 3) {
+                let div = document.createElement('div');
+                div.classList = 'small-thumb append-new mb-2';
+                div.innerHTML = `
+                    <div class="col-lg-12 mb-2">
+                        <a href="#" id="image-file" >
+                            <img src="" alt="" class="thumbnail" style="display:none;">
+                        </a>
+                        <label href="#" class="add-icon w-100">
+                            <div class="add-plus d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-images"></i>
+                            </div>
+                            <input type="file" hidden>
+                        </label>
+                    </div>
+                `;
+                appendcontainer.insertBefore(div, plus);
+
+                let fileInput = div.querySelector('.add-icon input[type="file"]');
+                let addIconLabel = div.querySelector('.add-icon');
+
+                fileInput.addEventListener('change', function (event) {
+                    const file = event.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            const img = div.querySelector('#image-file img');
+                            img.src = e.target.result;
+                            img.style.display = 'block'; // Show the image
+                            addIconLabel.style.display = 'none';
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+
+                // Add event listener to new thumbnail image
+                div.querySelector('.thumbnail').addEventListener('click', function () {
+                    updateBigImage(this.src);
+                });
+            } else {
+                alert('You can only add up to 3 items.');
+            }
+        });
+
+        // Add event listener to existing thumbnail images
+        document.querySelectorAll('.thumbnail').forEach(function (thumbnail) {
+            thumbnail.addEventListener('click', function () {
+                updateBigImage(this.src);
+            });
+        });
+
+        function updateBigImage(src) {
+            const bigImage = document.querySelector('.big-image-display');
+            bigImage.src = src;
+        }
+    </script>
 </body>
 
 </html>
