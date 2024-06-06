@@ -136,7 +136,7 @@
 
 
                     <div class="col-lg-6">
-                        <label for="" class="desc-head mb-24">Description 1/1</label>
+                        <label for="" class="desc-head mb-24" id="desc-head-label">Description 1/1</label>
                         <div class="mb-16">
                             <input type="text" placeholder="Title" class="form-custom" id="title" name="title">
                         </div>
@@ -611,7 +611,7 @@
             }
         });
     </script> -->
-    <script>
+    <!-- <script>
         let plus = document.querySelector('#plus');
         plus.addEventListener('click', function () {
             const appendcontainer = document.querySelector('#small-append');
@@ -660,7 +660,6 @@
             }
         });
 
-        // Add event listener to existing thumbnail images
         document.querySelectorAll('.thumbnail').forEach(function (thumbnail) {
             thumbnail.addEventListener('click', function () {
                 updateBigImage(this.src);
@@ -671,6 +670,80 @@
             const bigImage = document.querySelector('.big-image-display');
             bigImage.src = src;
         }
+    </script> -->
+    <script>
+        let plus = document.querySelector('#plus');
+        let appendcontainer = document.querySelector('#small-append');
+        let label = document.querySelector('#desc-head-label');
+        let totalImages = appendcontainer.querySelectorAll('.small-thumb').length - 1; // Initial count
+
+        plus.addEventListener('click', function () {
+            let count = appendcontainer.querySelectorAll('.small-thumb').length - 1;
+            if (count < 3) {
+                let div = document.createElement('div');
+                div.classList = 'small-thumb append-new mb-2';
+                div.innerHTML = `
+                    <div class="col-lg-12 mb-2">
+                        <a href="#" id="image-file" >
+                            <img src="" alt="" class="thumbnail" style="display:none;">
+                        </a>
+                        <label href="#" class="add-icon w-100">
+                            <div class="add-plus d-flex justify-content-center align-items-center">
+                                <i class="fa-solid fa-images"></i>
+                            </div>
+                            <input type="file" hidden>
+                        </label>
+                    </div>
+                `;
+                appendcontainer.insertBefore(div, plus);
+                totalImages++;
+                updateLabel(1, totalImages);
+
+                let fileInput = div.querySelector('.add-icon input[type="file"]');
+                let addIconLabel = div.querySelector('.add-icon');
+
+                fileInput.addEventListener('change', function (event) {
+                    const file = event.target.files[0];
+                    if (file) {
+                        const reader = new FileReader();
+                        reader.onload = function (e) {
+                            const img = div.querySelector('#image-file img');
+                            img.src = e.target.result;
+                            img.style.display = 'block'; // Show the image
+                            addIconLabel.style.display = 'none';
+                        };
+                        reader.readAsDataURL(file);
+                    }
+                });
+
+                // Add event listener to new thumbnail image
+                div.querySelector('.thumbnail').addEventListener('click', function () {
+                    updateBigImage(this.src);
+                    updateLabel(Array.from(appendcontainer.querySelectorAll('.thumbnail')).indexOf(this) + 1, totalImages);
+                });
+            } else {
+                alert('You can only add up to 3 items.');
+            }
+        });
+
+        document.querySelectorAll('.thumbnail').forEach(function (thumbnail, index) {
+            thumbnail.addEventListener('click', function () {
+                updateBigImage(this.src);
+                updateLabel(index + 1, totalImages); // Update the label on click
+            });
+        });
+
+        function updateBigImage(src) {
+            const bigImage = document.querySelector('.big-image-display');
+            bigImage.src = src;
+        }
+
+        function updateLabel(current, total) {
+            label.textContent = `Description ${current}/${total}`;
+        }
+
+        // Initial label update
+        updateLabel(1, totalImages);
     </script>
 </body>
 
