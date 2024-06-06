@@ -65,10 +65,10 @@
                                     </li>
                                 </ul>
                                 <ul class="d-flex align-items-center mb-0 ps-0">
-                                    <li class="nav-item me-32">
+                                    <li class="nav-item me-32" id="notification">
                                         <a class="nav-link" href="#"><i class="fa fa-bell"></i></a>
                                     </li>
-                                    <li class="nav-item me-32">
+                                    <li class="nav-item me-32" id="chat">
                                         <a class="nav-link" href="#"><i class="fa-solid fa-comments"></i></a>
                                     </li>
                                     <li class="nav-item me-32" id="profile">
@@ -80,7 +80,7 @@
 
                                             <ul class="dropdown-menu" data-bs-toggle="dropdown" aria-expanded="false">
                                                 <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
-                                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                                 <li><a class="dropdown-item" href="setting.html">Settings</a></li>
                                                 <hr>
                                                 <li><a class="dropdown-item" href="#">Logout</a></li>
                                             </ul>
@@ -92,7 +92,7 @@
                                             </a>
                                             <ul class="dropdown-menu shadow-sm">
                                                 <li><a class="dropdown-item" href="profile.html">My Profile</a></li>
-                                                <li><a class="dropdown-item" href="#">Settings</a></li>
+                                                <li><a class="dropdown-item" href="setting.html">Settings</a></li>
                                                 <hr>
                                                 <li><a class="dropdown-item" href="index.html">Logout</a></li>
                                             </ul>
@@ -482,6 +482,353 @@
             </div>
         </div>
     </footer>
+
+
+    <!-- popup  -->
+    <!-- notification  -->
+    <div class="notification-popup shadow" id="notification-popup">
+        <div class="custom-width ">
+            <div class="heading-notify py-3 px-2">
+                <a href="#" id="popup-close">
+                    <h4><img src="../assets/images/close.svg" alt=""> Notifications</h4>
+                </a>
+            </div>
+            <ul class="notification-list ps-0 mb-0">
+                <li>
+                    <div class="noty-list" id="first-noty">
+                        <h5 class="mb-10">Congratulations! You've Earned a New Badge!</h5>
+                        <p class="mb-10">We're excited to announce that you've just achieved a significant milestone in
+                            your creative
+                            journey! 🌟 You've earned the "Master Editor" badge for completi...</p>
+                        <div>
+                            <span>2h ago</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="noty-list">
+                        <h5 class="mb-10">Congratulations! You've Earned a New Badge!</h5>
+                        <p class="mb-10">We're excited to announce that you've just achieved a significant milestone in
+                            your creative
+                            journey! 🌟 You've earned the "Master Editor" badge for completi...</p>
+                        <div>
+                            <span>2h ago</span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="noty-list">
+                        <h5 class="mb-10">Congratulations! You've Earned a New Badge!</h5>
+                        <p class="mb-10">We're excited to announce that you've just achieved a significant milestone in
+                            your creative
+                            journey! 🌟 You've earned the "Master Editor" badge for completi...</p>
+                        <div>
+                            <span>2h ago</span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- notification  -->
+
+    <!-- chat popup  -->
+    <div class="chat-popup shadow" id="chat-popup">
+        <div class="custom-width ">
+            <div class="heading-chat py-3 px-3 mb-10">
+                <h4>Messages</h4>
+                <a href="#" id="chat-close">
+                    <i class="fa fas fa-times text-white"></i>
+                </a>
+            </div>
+            <div class="chat-search mb-24 px-3 position-relative">
+                <input type="search" placeholder="Search..." class="form-custom" id="search" name="search">
+                <a href="#" id="search-chat">
+                    <span class="material-symbols-outlined">
+                        search
+                    </span>
+                </a>
+            </div>
+            <hr class="myhr">
+            <ul class="chat-list ps-0 mb-0" id="chat-scroll">
+                <li>
+                    <a href="#">
+                        <div class="chat-user-details d-flex justify-content-between align-items-center">
+                            <div class="chat-user d-flex gap-2 align-items-center">
+                                <div class="image-data position-relative">
+                                    <img src="../assets/images/user/user-1.jpg" alt="" class="rounded-circle">
+                                    <div class="online-status">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="chat-user-info">
+                                    <h5 class="mb-0">Lily Johenson</h5>
+                                    <h6 class="mb-0">Hello!</h6>
+                                </div>
+                            </div>
+                            <div class="time-count text-center">
+                                <span>10:00</span>
+                                <div class="message-count m-auto">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="chat-user-details d-flex justify-content-between align-items-center">
+                            <div class="chat-user d-flex gap-2 align-items-center">
+                                <div class="image-data position-relative">
+                                    <img src="../assets/images/user/user-1.jpg" alt="" class="rounded-circle">
+                                    <div class="online-status">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="chat-user-info">
+                                    <h5 class="mb-0">Lily Johenson</h5>
+                                    <h6 class="mb-0">Hello!</h6>
+                                </div>
+                            </div>
+                            <div class="time-count text-center">
+                                <span>10:00</span>
+                                <div class="message-count m-auto">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="chat-user-details d-flex justify-content-between align-items-center">
+                            <div class="chat-user d-flex gap-2 align-items-center">
+                                <div class="image-data position-relative">
+                                    <img src="../assets/images/user/user-1.jpg" alt="" class="rounded-circle">
+                                    <div class="online-status">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="chat-user-info">
+                                    <h5 class="mb-0">Lily Johenson</h5>
+                                    <h6 class="mb-0">Hello!</h6>
+                                </div>
+                            </div>
+                            <div class="time-count text-center">
+                                <span>10:00</span>
+                                <div class="message-count m-auto">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="chat-user-details d-flex justify-content-between align-items-center">
+                            <div class="chat-user d-flex gap-2 align-items-center">
+                                <div class="image-data position-relative">
+                                    <img src="../assets/images/user/user-1.jpg" alt="" class="rounded-circle">
+                                    <div class="online-status">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="chat-user-info">
+                                    <h5 class="mb-0">Lily Johenson</h5>
+                                    <h6 class="mb-0">Hello!</h6>
+                                </div>
+                            </div>
+                            <div class="time-count text-center">
+                                <span>10:00</span>
+                                <div class="message-count m-auto">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="chat-user-details d-flex justify-content-between align-items-center">
+                            <div class="chat-user d-flex gap-2 align-items-center">
+                                <div class="image-data position-relative">
+                                    <img src="../assets/images/user/user-1.jpg" alt="" class="rounded-circle">
+                                    <div class="online-status">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="chat-user-info">
+                                    <h5 class="mb-0">Lily Johenson</h5>
+                                    <h6 class="mb-0">Hello!</h6>
+                                </div>
+                            </div>
+                            <div class="time-count text-center">
+                                <span>10:00</span>
+                                <div class="message-count m-auto">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="chat-user-details d-flex justify-content-between align-items-center">
+                            <div class="chat-user d-flex gap-2 align-items-center">
+                                <div class="image-data position-relative">
+                                    <img src="../assets/images/user/user-1.jpg" alt="" class="rounded-circle">
+                                    <div class="online-status">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="chat-user-info">
+                                    <h5 class="mb-0">Lily Johenson</h5>
+                                    <h6 class="mb-0">Hello!</h6>
+                                </div>
+                            </div>
+                            <div class="time-count text-center">
+                                <span>10:00</span>
+                                <div class="message-count m-auto">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <div class="chat-user-details d-flex justify-content-between align-items-center">
+                            <div class="chat-user d-flex gap-2 align-items-center">
+                                <div class="image-data position-relative">
+                                    <img src="../assets/images/user/user-1.jpg" alt="" class="rounded-circle">
+                                    <div class="online-status">
+                                        <i class="fa-solid fa-circle"></i>
+                                    </div>
+                                </div>
+                                <div class="chat-user-info">
+                                    <h5 class="mb-0">Lily Johenson</h5>
+                                    <h6 class="mb-0">Hello!</h6>
+                                </div>
+                            </div>
+                            <div class="time-count text-center">
+                                <span>10:00</span>
+                                <div class="message-count m-auto">
+                                    2
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+                </li>
+
+
+            </ul>
+        </div>
+    </div>
+
+    <!-- chat-single  -->
+    <div class="chat-popup shadow chat-details" id="chat-popup">
+        <div class="custom-width ">
+            <div class="heading-chat d-block py-3 px-3 ">
+                <div class="chat-user-details d-flex justify-content-between align-items-center">
+                    <div class="d-flex align-items-center gap-3">
+                        <img src="../assets/images/close.svg" alt="">
+                        <div class="chat-user d-flex gap-2 align-items-center">
+                            <div class="image-data position-relative">
+                                <img src="../assets/images/user/user-1.jpg" alt="" class="rounded-circle">
+
+                            </div>
+                            <div class="chat-user-info">
+                                <h5 class="mb-0">Lily Johenson</h5>
+                                <p class="mb-0">@johndoe</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="dropdown">
+                        <a class="dropdown-toggle" href="#" style="color: #DFDFDF;" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="material-symbols-outlined">
+                                more_horiz
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu shadow">
+                            <li><a class="dropdown-item" href="#">Block User</a></li>
+                            <li><a class="dropdown-item" href="#">Clear Chat</a></li>
+                            <li><a class="dropdown-item" href="#">Delete Thread</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <hr class="myhr">
+            <ul class="chat-list ps-0 mb-0" id="chat-detail-scroll">
+                <li class="left">
+                    <div class="message other-message">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque eget risus
+                            euismod accumsan. </p>
+                        <span>2min ago</span>
+                    </div>
+                </li>
+                <li class="right">
+                    <div class="message my-message">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque eget risus
+                            euismod accumsan. </p>
+                        <span>2min ago</span>
+                    </div>
+                </li>
+                <li class="left">
+                    <div class="message other-message">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque eget risus
+                            euismod accumsan. </p>
+                        <span>2min ago</span>
+                    </div>
+                </li>
+                <li class="right">
+                    <div class="message my-message">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque eget risus
+                            euismod accumsan. </p>
+                        <span>2min ago</span>
+                    </div>
+                </li>
+                <li class="left">
+                    <div class="message other-message">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque eget risus
+                            euismod accumsan. </p>
+                        <span>2min ago</span>
+                    </div>
+                </li>
+                <li class="right">
+                    <div class="message my-message">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum in neque eget risus
+                            euismod accumsan. </p>
+                        <span>2min ago</span>
+                    </div>
+                </li>
+            </ul>
+            <div class="chat-footer px-3 py-3">
+                <form action="" class="d-flex align-items-center gap-3">
+                    <div class="attachment">
+                        <span class="material-symbols-outlined">
+                            attach_file
+                        </span>
+                    </div>
+                    <div class="input position-relative w-100">
+                        <input type="text" class="comment-input" placeholder="Write a comment...">
+                        <div id="sendbt">
+                            <button>
+                                <span class="material-symbols-outlined">
+                                    send
+                                </span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- chat-single  -->
+    <!-- chat popup  -->
+    <!-- popup  -->
+
+
 
     <script src="../assets/js/jquery.js"></script>
     <script src="../assets/js/bootstrap.bundle.js"></script>
