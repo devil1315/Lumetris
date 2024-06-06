@@ -130,7 +130,7 @@
                             </div>
                         </div>
                         <div class="other-details mb-40">
-                            <h4 class="mb-16">Step 1 of 12</h4>
+                            <h4 id="carousel-counter" class="mb-16">Step 1 of 3</h4>
                             <p>Understanding Basic Cutting Techniques</p>
                         </div>
                         <div class="comment-start mb-32">
@@ -154,8 +154,9 @@
                             </form>
                         </div>
                         <div class="coment-list">
-                            <ul class="ps-0 pb-0 mb-0" id="scrollbar">
+                            <ul class="ps-0 pb-0 mb-0">
                                 <li class="mb-24">
+                                    <!-- id="scrollbar" -->
                                     <div class="coment-profile d-flex gap-3">
                                         <a href="userprofile.html">
                                             <img src="../assets/images/user/user-1.jpg" alt="">
@@ -913,23 +914,26 @@
     <script src="../assets/js/bootstrap.bundle.js"></script>
     <script src="../assets/js/custom.js"></script>
     <script>
-        $('.owl-carousel').owlCarousel({
-            loop: false,
-            margin: 10,
-            nav: true,
-            navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-            responsive: {
-                0: {
-                    items: 1
-                },
-                600: {
-                    items: 1
-                },
-                1000: {
-                    items: 1
-                }
+        $(document).ready(function () {
+            var owl = $('.owl-carousel');
+            var totalItems = owl.find('.item').length;
+
+            $('#carousel-counter').text('Step 1 of ' + totalItems);
+
+            owl.owlCarousel({
+                items: 1,
+                loop: false,
+                navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
+                margin: 10,
+                nav: true,
+                onChanged: updateCounter
+            });
+
+            function updateCounter(event) {
+                var currentIndex = event.item.index + 1;
+                $('#carousel-counter').text('Step ' + currentIndex + ' of ' + totalItems);
             }
-        })
+        });
     </script>
 </body>
 

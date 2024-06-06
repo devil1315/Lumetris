@@ -1814,6 +1814,62 @@ footer {
 
 .note-clip {
     position: absolute;
-    bottom: 20px;
+    bottom: 50px;
     right: 24px;
+}
+
+.nav-link:focus-visible {
+    box-shadow: none !important;
+}
+
+button:focus-visible {
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+/* grid  */
+.mItem img {
+    width: 100%;
+    border-radius: var(--radius);
+    -webkit-border-radius: var(--radius);
+    -moz-border-radius: var(--radius);
+    -ms-border-radius: var(--radius);
+    -o-border-radius: var(--radius);
+}
+
+.masonry {
+    column-count: 4;
+    column-gap: 16px;
+}
+
+.masonry .mItem {
+    display: inline-block;
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+.mItem h5 {
+    font-weight: 600;
+    font-size: 16px;
+    color: var(--text-color);
+    margin-bottom: 0;
+    margin-top: 12px;
+}
+
+@media (max-width: 1199px) {
+    .masonry {
+        column-count: 4;
+    }
+}
+
+@media (max-width: 991px) {
+    .masonry {
+        column-count: 3;
+    }
+}
+
+@media (max-width: 767px) {
+    .masonry {
+        column-count: 2;
+    }
 }

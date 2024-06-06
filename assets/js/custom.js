@@ -130,3 +130,34 @@ document.addEventListener("DOMContentLoaded", (event) => {
 //             notificationPopup.classList.remove('popup-show');
 //         });
 // chat Notification
+
+// document.getElementById("chatdetail").addEventListener("click", function () {
+//   var chatPopup = document.getElementsByClassName("chat-details")[0];
+//   chatPopup.classList.toggle("chat-show");
+// });
+
+// document.addEventListener("click", function (event) {
+//   var chatPopup = document.getElementsByClassName("chat-details")[0];
+//   var isClickInside =
+//     chatPopup.contains(event.target) ||
+//     document.getElementById("chatdetail").contains(event.target);
+//   if (!isClickInside) {
+//     chatPopup.classList.remove("chat-show");
+//   }
+// });
+
+// heart
+document.querySelectorAll(".social-heart").forEach(function (element) {
+  element.addEventListener("click", function () {
+    const heartIcon = this.querySelector("i");
+    if (heartIcon.classList.contains("fa-regular")) {
+      heartIcon.classList.remove("fa-regular");
+      heartIcon.classList.add("fa-solid");
+    } else {
+      heartIcon.classList.remove("fa-solid");
+      heartIcon.classList.add("fa-regular");
+    }
+  });
+});
+
+// heart
