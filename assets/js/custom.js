@@ -1,6 +1,3 @@
-const currentYear = new Date().getFullYear();
-document.getElementById("year").innerText = currentYear;
-
 // $(function () {
 //   var loader = $("#loader-wrapper");
 //   setTimeout(function () {
@@ -161,3 +158,6 @@ document.querySelectorAll(".social-heart").forEach(function (element) {
 });
 
 // heart
+
+const currentYear = new Date().getFullYear();
+document.getElementById("year").innerText = currentYear;
