@@ -298,6 +298,7 @@ input:-webkit-autofill:active {
 .lumetris-nav .nav-link {
     color: var(--white3);
     font-size: 16px;
+    white-space: nowrap;
 }
 
 .lumetris-nav .nav-link.active,
@@ -1459,7 +1460,7 @@ footer {
 .input #sendbt {
     position: absolute;
     top: 12px;
-    right: 25px;
+    right: 12px;
 }
 
 .heading-h3 {
@@ -1564,7 +1565,7 @@ footer {
     position: fixed;
     z-index: 9999;
     right: 20px;
-    bottom: -1000px;
+    bottom: -1500px;
     transition: 0.5s ease-in-out;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
@@ -1700,7 +1701,7 @@ footer {
     position: fixed;
     z-index: 9999;
     right: 20px;
-    bottom: -1000px;
+    bottom: -1500px;
     transition: 0.5s ease-in-out;
     -webkit-transition: 0.5s ease-in-out;
     -moz-transition: 0.5s ease-in-out;
@@ -1874,4 +1875,101 @@ button:focus-visible {
     .masonry {
         column-count: 2;
     }
+}
+
+/* header search  */
+#header-search input {
+    background-color: var(--border) !important;
+    border: 1px solid var(--border2) !important;
+    color: var(--white4) !important;
+}
+
+#header-search input::placeholder {
+    color: var(--white4) !important;
+}
+
+#header-search i {
+
+    color: var(--accent);
+}
+
+#mobile-search {
+    display: none;
+}
+
+#header-search {
+    display: block;
+}
+
+@media (max-width:992px) {
+    #mobile-search {
+        display: block;
+    }
+
+    #header-search {
+        display: none
+    }
+
+    .create-text {
+        display: none;
+    }
+
+    #mobile-navbar {
+        position: absolute;
+        right: 60px;
+    }
+
+
+}
+
+@media (min-width:992px) and (max-width:1200px) {
+    .lumetris-nav .container {
+        max-width: 100% !important;
+    }
+}
+
+.follower-list input {
+    border-radius: 50px;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+}
+
+.follow-search-btn i {
+    color: var(--accent);
+}
+
+.follow-search-btn {
+    position: absolute;
+    right: 30px;
+    top: 16px;
+}
+
+/* header search  */
+
+.comment-images {
+    margin-left: 65px;
+}
+
+.comment-images img {
+    width: 110px;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    border-radius: 8px;
+    overflow: hidden;
+    overflow-clip-margin: padding-box;
+}
+
+#delete-image {
+    position: absolute;
+    left: 10px;
+}
+
+#delete-image i {
+    color: #fff;
+}
+
+.attachment span {
+    color: #fff;
 }

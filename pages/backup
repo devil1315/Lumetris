@@ -29,49 +29,13 @@
         <div class="container g-0">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container-fluid">
-                    <div class="d-flex align-items-center">
-                        <a class="navbar-brand navbar-logo me-32" href="index.html">
+                    <div>
+                        <a class="navbar-brand navbar-logo" href="index.html">
                             <img src="../assets/images/logo.svg" alt="" class="img-fluid">
                         </a>
-                        <div class="d-flex gap-3" id="mobile-navbar">
-                            <div class="d-flex gap-2">
-                                <a href="create-tos.html" class="btn-accent btn-login text-nowrap" type="button"><i
-                                        class="fa fa-plus"></i>
-                                    <span class="create-text">Create</span>
-                                </a>
-                                <a href="#" id="mobile-search" class="btn-accent btn-login text-nowrap" type="button">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                            </div>
-                            <form action="" class="position-relative searchform special-mobile" id="header-search"
-                                style="width: 300px !important;">
-                                <input type="search" placeholder="Search..." class="search-input pe-5">
-                                <a href="#" class="searchIcon">
-                                    <i class="fa fa-search"></i>
-                                </a>
-                            </form>
-                        </div>
-                    </div>
-                    <div class="modal fade" id="exampleModalFullscreen" tabindex="-1"
-                        aria-labelledby="exampleModalFullscreenLabel" style="display: none;" aria-hidden="true">
-                        <div class="modal-dialog modal-fullscreen">
-                            <div class="modal-content">
-                                <div class="modal-header border-0">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
-                                        <i class="fa fa-times text-white"></i>
-                                    </button>
-                                </div>
-                                <div class="modal-body d-flex justify-content-center align-items-center">
-                                    <form action="" class="position-relative searchform " style="display: block !important;width: 70%;
-                max-width: 100%;" id="header-search">
-                                        <input type="search" placeholder="Search..." class="search-input pe-5">
-                                        <a href="#" class="searchIcon">
-                                            <i class="fa fa-search"></i>
-                                        </a>
-                                    </form>
-                                </div>
-                            </div>
-                        </div>
+                        <a href="create-tos.html" class="btn-accent btn-login" type="button"><i class="fa fa-plus"></i>
+                            <span class="create-text">Create</span>
+                        </a>
                     </div>
 
                     <button class="navbar-toggler" style="padding: 10px;border: 1px solid rgb(255 255 255 / 15%);"
@@ -169,31 +133,18 @@
                             <h4 id="carousel-counter" class="mb-16">Step 1 of 3</h4>
                             <p>Understanding Basic Cutting Techniques</p>
                         </div>
-                  
                         <div class="comment-start mb-32">
                             <h3 class="mb-24">Comments</h3>
-                            <div class="comment-images mb-3" id="comment-images" style="display: none;">
-                                <div class="position-relative">
-                                    <img src="../assets/images/owl-carousel.jpg" alt="Selected Image" class="img-fluid"
-                                        id="selected-image">
-                                    <a href="#" id="delete-image">
-                                        <i class="fas fa-times"></i>
-                                    </a>
-                                </div>
-                            </div>
                             <form action="" class="d-flex align-items-center gap-3">
                                 <div class="attachment">
-                                    <label for="commentfile">
-                                        <span class="material-symbols-outlined">
-                                            attach_file
-                                        </span>
-                                        <input type="file" id="commentfile" hidden>
-                                    </label>
+                                    <span class="material-symbols-outlined">
+                                        attach_file
+                                    </span>
                                 </div>
                                 <div class="input position-relative w-100">
                                     <input type="text" class="comment-input" placeholder="Write a comment...">
                                     <div id="sendbt">
-                                        <button type="button">
+                                        <button>
                                             <span class="material-symbols-outlined">
                                                 send
                                             </span>
@@ -371,7 +322,6 @@
                         </div>
                     </div>
                 </div>
-
                 <div class="col-lg-4 mt-sm-4 ">
                     <div class="library ">
                         <div class="container">
@@ -546,7 +496,74 @@
         </div>
     </section>
 
-
+    <footer class="footer py-50 pb-4 d-none">
+        <div class="container">
+            <div class="footer-nav mb-48">
+                <div class="footer-logo">
+                    <img src="../assets/images/logo.svg" alt="">
+                </div>
+                <div class="footer-links">
+                    <ul class="ps-0">
+                        <li><a href="#">All Tutorials</a></li>
+                        <li><a href="#">ShotDeck</a></li>
+                        <li><button class="btn-accent btn-login" data-bs-toggle="modal" data-bs-target="#login"
+                                type="button">Login or
+                                Register</button></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="social-footer ">
+                <div class="socials">
+                    <a href="#">
+                        <div class="socialicon">
+                            <i class="fab fa-facebook-f"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="socialicon">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                    </a>
+                    <a href="#">
+                        <div class="socialicon">
+                            <i class="fa-brands fa-instagram"></i>
+                        </div>
+                    </a>
+                </div>
+                <div class="contacts">
+                    <div class="phone">
+                        <a href="#">+123 456 7890</a>
+                    </div>
+                    <div class="email">
+                        <a href="#">contact@lumetris.com</a>
+                    </div>
+                </div>
+            </div>
+            <hr class="hr-line">
+            <div class="copyright">
+                <div class="copyright-text">
+                    <p>© <span id="year"></span> <a href="index.html">Lumeris</a>. All rights reserved</p>
+                </div>
+                <div class="payment-card">
+                    <a href="#">
+                        <img src="../assets/images/cards/mastercard.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/visa.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/americanexpress.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/phi.png" alt="" class="img-fluid">
+                    </a>
+                    <a href="#">
+                        <img src="../assets/images/cards/pay.png" alt="" class="img-fluid">
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
 
     <!-- popup  -->
     <!-- notification  -->
@@ -915,26 +932,6 @@
                 var currentIndex = event.item.index + 1;
                 $('#carousel-counter').text('Step ' + currentIndex + ' of ' + totalItems);
             }
-        });
-    </script>
-    <script>
-        document.getElementById('commentfile').addEventListener('change', function (event) {
-            const file = event.target.files[0];
-            if (file) {
-                const reader = new FileReader();
-                reader.onload = function (e) {
-                    const img = document.getElementById('selected-image');
-                    img.src = e.target.result;
-                    document.getElementById('comment-images').style.display = 'block';
-                };
-                reader.readAsDataURL(file);
-            }
-
-            var delete_btn = document.getElementById("delete-image");
-            delete_btn.addEventListener('click', function () {
-                document.getElementById('selected-image').src = '';
-                document.getElementById('comment-images').style.display = 'none';
-            });
         });
     </script>
 </body>
