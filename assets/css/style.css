@@ -1973,3 +1973,7 @@ button:focus-visible {
 .attachment span {
     color: #fff;
 }
+
+.social-heart .fa-heart.fa-solid {
+    color: var(--accent);
+}
