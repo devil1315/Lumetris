@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login - Lumetris</title>
+    <link rel="shortcut icon" href="./assets/static/images/logo/file.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/compiled/css/app.css">
+    <link rel="stylesheet" href="./assets/compiled/css/auth.css">
+</head>
+
+<body>
+    <script src="assets/static/js/initTheme.js"></script>
+    <div id="auth">
+        <div class="row h-100 align-items-center justify-content-center">
+            <div class="col-xl-4 col-lg-4 col-12">
+                <div id="auth-left">
+                    <div class="auth-logo">
+                        <a href="index.html"><img src="./assets/static/images/logo/file.png" alt="Logo"></a>
+                    </div>
+                    <h1 class="auth-title">Log in.</h1>
+                    <p class="auth-subtitle mb-3">Log in with your data that you entered during registration.</p>
+
+                    <form action="index.html">
+                        <div class="form-group position-relative has-icon-left mb-4">
+                            <input type="text" class="form-control form-control-xl login-box" placeholder="Username">
+                            <div class="form-control-icon">
+
+                            </div>
+                        </div>
+                        <div class="form-group position-relative has-icon-left mb-4">
+                            <input type="password" class="form-control form-control-xl login-box" placeholder="Password"
+                                id="pass">
+                            <div class="form-control-icon" id="eyeIconId"
+                                onclick="togglePasswordVisibility('pass', 'eyeIconId')">
+                                <i class="bi bi-eye-slash"></i>
+                            </div>
+                        </div>
+
+                        <button class="btn btn-primary btn-block btn-lg shadow-lg mt-4">Login</button>
+                    </form>
+                    <div class="text-center mt-3 text-lg fs-4 light">
+                        <p><a class="font-bold" href="auth-forgot-password.html">Forgot password?</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+
+    <script>
+        function togglePasswordVisibility(inputId, eyeIconId) {
+            const passwordInput = document.getElementById(inputId);
+            const eyeIcon = document.getElementById(eyeIconId);
+
+            if (passwordInput.type == 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.innerHTML = '<i class="bi bi-eye"></i>';
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.innerHTML = '<i class="bi bi-eye-slash"></i>';
+            }
+        }
+    </script>
+
+</body>
+
+</html>

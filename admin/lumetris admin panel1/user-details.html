@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Details - Lumetris</title>
+
+    <link rel="shortcut icon" href="./assets/static/images/logo/file.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/compiled/css/app.css">
+    <link rel="stylesheet" href="./assets/compiled/css/iconly.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div id="loader-content"></div>
+    </div>
+
+    <script src="assets/static/js/initTheme.js"></script>
+    <div id="app">
+        <div id="sidebar">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header position-relative">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="logo">
+                            <a href="index.html"><img src="./assets/static/images/logo/file.png" alt="Logo"
+                                    srcset=""></a>
+                        </div>
+                        <div class="sidebar-toggler  x">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+
+                        <li class="sidebar-item  ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item active">
+                            <a href="list.html" class='sidebar-link'>
+                                <i class="bi bi-file-person"></i>
+                                <span>Users</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="post.html" class='sidebar-link'>
+                                <i class="bi bi-image"></i>
+                                <span>Scene Frames</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="how_tos.html" class='sidebar-link'>
+                                <i class="bi bi-collection-play"></i>
+                                <span>How-Tos</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="notification.html" class='sidebar-link'>
+                                <i class="bi bi-bell"></i>
+                                <span>Notifications</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-item  ">
+                            <a href="about-us.html" class='sidebar-link'>
+                                <i class="bi bi-info-circle"></i>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-item  ">
+                            <a href="terms-conditions.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-medical"></i>
+                                <span>Terms & Conditions</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="help-support.html" class='sidebar-link'>
+                                <i class="bi bi-question-circle"></i>
+                                <span>Help & Supports</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="privacy-policy.html" class='sidebar-link'>
+                                <i class="bi bi-shield-check"></i>
+                                <span>Privacy Policy</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="account-profile.html" class="sidebar-link">
+                                <i class="bi bi-person"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-sec">
+            <div class="container-fluid">
+                <div class="row position-relative px-4 pe-3 py-2 w-100 g-0">
+                    <a href="#" class="burger-btn d-block d-xl-none ">
+                        <i class="bi bi-justify fs-3"></i>
+                    </a>
+                    <div class="col-12 col-lg-12  d-flex justify-content-end align-items-center gap-3 ">
+                        <div class="notification-icon">
+                            <ul>
+                                <li> <i class="bi bi-bell"></i></li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="profile-box d-flex justify-content-start align-items-center gap-2 position-relative pointer">
+                            <div class="profile-img">
+                                <img src="assets/compiled/jpg/4.jpg" alt="" width="40px" height="40px"
+                                    class="rounded-circle">
+                            </div>
+                            <div class="profile-name">
+                                <h5 class="m-0">Sam Rick</h5>
+                                <p class="m-0">Actor</p>
+                            </div>
+                            <div id="dropdown" style="display: none;">
+                                <div
+                                    class="profile-account d-flex justify-content-start align-items-start flex-column gap-1">
+                                    <a href="account-profile.html"><i class="bi bi-person"></i>My Profile</a>
+                                    <a href="auth-login.html"><i class="bi bi-box-arrow-right"></i>Log Out</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="page-heading d-flex align-items-center justify-content-between">
+                <h3>Details</h3>
+                <a href="list.html" class="btn btn-primary">Back</a>
+            </div>
+
+            <section class="section">
+                <div class="row">
+                    <div class="col-12 col-lg-4">
+                        <div class="card p-0 mb-3">
+                            <div class="card-body position-relative p-3">
+                                <div class="d-flex justify-content-start align-items-center flex-column  gap-0">
+                                    <div class="avatar avatar-2xl">
+                                        <img src="./assets/compiled/jpg/2.jpg" alt="Avatar">
+                                    </div>
+                                    <div class="text-center">
+                                        <h4 class="mt-2 mb-0">John Doe</h3>
+                                            <p class="text-small m-0">@johnDoe1</p>
+                                    </div>
+                                </div>
+                                <div class="d-flex justify-content-between align-items-center gap-0 text-center">
+                                    <div class="">
+                                        <h6 class="mt-2 mb-0">16</h3>
+                                            <p class="text-small m-0">Scene Frames</p>
+                                    </div>
+                                    <div class="">
+                                        <h6 class="mt-2 mb-0">5000</h3>
+                                            <p class="text-small m-0">Followers</p>
+                                    </div>
+                                    <div class="">
+                                        <h6 class="mt-2 mb-0">222</h3>
+                                            <p class="text-small m-0">Following</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-lg-8">
+                        <div class="card p-0">
+                            <div class="card-body position-relative p-3">
+                                <div
+                                    class="d-flex justify-content-between align-items-start flex-row gap-3 mt-3 flex-column">
+                                    <div>
+                                        <h6 class="mt-0 mb-1">Bio</h3>
+                                            <p class="text-small m-0">Lorem ipsum dolor sit amet, consectetur
+                                                adipisicing elit. Maxime deleniti ullam vel neque hic aliquid rem atque,
+                                                eum velit unde vitae natus ipsa minima, explicabo perspiciatis beatae
+                                                amet repudiandae excepturi. Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias, aut autem eius accusantium fuga distinctio delectus consequatur quo, laboriosam ut, commodi error! Quis, voluptatum voluptate necessitatibus suscipit neque odit ratione.</p>
+                                    </div>
+                                   
+                                    <div>
+                                        <h6 class="mt-0 mb-1">Email</h3>
+                                            <p class="text-small m-0">xyz@yahoo.com</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-12 col-lg-12">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="card">
+                                    <div class="card-header">
+                                        <h5 class="card-title">Scene Frames</h5>
+                                    </div>
+                                    <div class="container">
+                                        <div class="row g-3 px-4">
+                                            <div class="masonry">
+                                                <div class="mItem position-relative">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                                                        <img src="./assets/compiled/jpg/water.jpg">
+                                                        <h5>Lorem ipsum dolor sit amet</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="mItem position-relative">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal1">
+                                                        <img src="./assets/compiled/jpg/building.jpg">
+                                                        <h5>Lorem ipsum dolor sit amet</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="mItem position-relative">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                                                        <img src="./assets/compiled/jpg/motorcycle.jpg">
+                                                        <h5>Lorem ipsum dolor sit amet</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="mItem position-relative">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                                                        <img src="./assets/compiled/jpg/origami.jpg">
+                                                        <h5>Lorem ipsum dolor sit amet</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="mItem position-relative">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                                                        <img src="./assets/compiled/jpg/architecture1.jpg">
+                                                        <h5>Lorem ipsum dolor sit amet</h5>
+                                                    </a>
+                                                </div>
+
+                                                <div class="mItem position-relative">
+                                                    <a href="#" data-bs-toggle="modal" data-bs-target="#lightboxModal">
+                                                        <img src="./assets/compiled/jpg/bg-mountain.jpg">
+                                                        <h5>Lorem ipsum dolor sit amet</h5>
+                                                    </a>
+                                                </div>
+
+
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Lightbox Modal -->
+            <div class="modal fade" id="lightboxModal" tabindex="-1" aria-labelledby="lightboxModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal">
+                    <div class="modal-content">
+                        <div class="modal-body pb-0">
+                            <h5 class="m-0">Title</h5>
+                        </div>
+
+                        <div class="modal-body pt-2 pb-2">
+                            <img src="./assets/compiled/jpg/water.jpg" width="100%">
+                            <p class="text-wrap mb-1 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Explicabo eligendi est ullam, nihil magnam facere!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lightboxModal1" tabindex="-1" aria-labelledby="lightboxModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal">
+                    <div class="modal-content">
+                        <div class="modal-body pb-0">
+                            <h5 class="m-0">Title</h5>
+                        </div>
+
+                        <div class="modal-body pt-2 pb-2">
+                            <img src="./assets/compiled/jpg/building.jpg" width="100%">
+                            <p class="text-wrap mb-1 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Explicabo eligendi est ullam, nihil magnam facere!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal fade" id="lightboxModal2" tabindex="-1" aria-labelledby="lightboxModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered modal">
+                    <div class="modal-content">
+                        <div class="modal-body pb-0">
+                            <h5 class="m-0">Title</h5>
+                        </div>
+
+                        <div class="modal-body pt-2 pb-2">
+                            <img src="./assets/compiled/jpg/motorcycle.jpg" width="100%">
+                            <p class="text-wrap mb-1 mt-2">Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                                Explicabo eligendi est ullam, nihil magnam facere!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            class="col-md-12 footer-copyright d-flex flex-wrap align-items-center justify-content-between">
+                            <p class="mb-0 f-w-600">Copyright <span class="year-update">2024</span> © Lumetris</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+    <script src="assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+
+    <script src="assets/compiled/js/app.js"></script>
+    <script src="assets/compiled/js/script.js"></script>
+
+</body>
+
+</html>

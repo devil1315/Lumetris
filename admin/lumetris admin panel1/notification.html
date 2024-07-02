@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notification - Lumetris</title>
+
+
+
+    <link rel="shortcut icon" href="./assets/static/images/logo/file.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/compiled/css/app.css">
+
+    <style>
+        .nav-tabs .nav-link.active {
+            font-weight: bold;
+        }
+
+        .d-flex .me-3 {
+            min-width: 100px;
+        }
+
+        .d-flex .me-2 {
+            display: inline-flex;
+            align-items: center;
+        }
+
+        .btn-outline-secondary {
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            max-width: 200px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="loader">
+        <div id="loader-content"></div>
+    </div>
+    
+    <script src="assets/static/js/initTheme.js"></script>
+    <div id="app">
+        <div id="sidebar">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header position-relative">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="logo">
+                            <a href="index.html"><img src="./assets/static/images/logo/file.png" alt="Logo"
+                                    srcset=""></a>
+                        </div>
+                        <div class="sidebar-toggler  x">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+
+                        <li class="sidebar-item  ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        
+                        <li class="sidebar-item ">
+                            <a href="list.html" class='sidebar-link'>
+                                <i class="bi bi-file-person"></i>
+                                <span>Users</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="post.html" class='sidebar-link'>
+                                <i class="bi bi-image"></i>
+                                <span>Scene Frames</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="how_tos.html" class='sidebar-link'>
+                                <i class="bi bi-collection-play"></i>
+                                <span>How-Tos</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item active ">
+                            <a href="notification.html" class='sidebar-link'>
+                                <i class="bi bi-bell"></i>
+                                <span>Notifications</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-item  ">
+                            <a href="about-us.html" class='sidebar-link'>
+                                <i class="bi bi-info-circle"></i>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-item  ">
+                            <a href="terms-conditions.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-medical"></i>
+                                <span>Terms & Conditions</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="help-support.html" class='sidebar-link'>
+                                <i class="bi bi-question-circle"></i>
+                                <span>Help & Supports</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="privacy-policy.html" class='sidebar-link'>
+                                <i class="bi bi-shield-check"></i>
+                                <span>Privacy Policy</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="account-profile.html" class="sidebar-link">
+                                <i class="bi bi-person"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="profile-sec">
+            <div class="container-fluid">
+                <div class="row position-relative px-4 pe-3 py-2 w-100 g-0">
+                    <a href="#" class="burger-btn d-block d-xl-none ">
+                        <i class="bi bi-justify fs-3"></i>
+                    </a>
+                    <div class="col-12 col-lg-12  d-flex justify-content-end align-items-center gap-3 ">
+                        <div class="notification-icon">
+                            <ul>
+                                <li> <i class="bi bi-bell"></i></li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="profile-box d-flex justify-content-start align-items-center gap-2 position-relative pointer">
+                            <div class="profile-img">
+                                <img src="assets/compiled/jpg/4.jpg" alt="" width="40px" height="40px"
+                                    class="rounded-circle">
+                            </div>
+                            <div class="profile-name">
+                                <h5 class="m-0">Sam Rick</h5>
+                                <p class="m-0">Actor</p>
+                            </div>
+                            <div id="dropdown" style="display: none;">
+                                <div
+                                    class="profile-account d-flex justify-content-start align-items-start flex-column gap-1">
+                                    <a href="account-profile.html"><i class="bi bi-person"></i>My Profile</a>
+                                    <a href="auth-login.html"><i class="bi bi-box-arrow-right"></i>Log Out</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="page-heading">
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-1 order-last mb-4">
+                            <h3>Notification</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12 col-sm-12 col-xxl-12 col-ed-12 box-col-12">
+                        <div class="card">
+                            <div class="card-body">
+                                <div class="table-responsive theme-scrollbar signal-table">
+                                    <table class="table table-hover text-nowrap">
+                                        <thead>
+                                            <tr>
+                                                <th scope="col">Sr no.</th>
+                                                <th scope="col">Title</th>
+                                                <th scope="col">Description</th>
+                                                <th scope="col">Option</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">1</th>
+                                                <td>Nam possimus sit et</td>
+                                                <td>
+                                                    <p class="para">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit.
+                                                        Ratione
+                                                        praesentium labore minus illo natus debitis ad itaque
+                                                        corporis
+                                                        iste saepe aspernatur tempora, velit laudantium nesciunt
+                                                        adipisci mollitia consequuntur deleniti nulla!</p>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                                            <i class="bi bi-eye-fill"></i>
+                                                        </button>
+                                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1"
+                                                            aria-labelledby="exampleModalCenterTitle"
+                                                            style="display: none;" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-body">
+                                                                        <span>Lorem ipsum dolor sit amet consectetur
+                                                                            adipisicing elit. Unde ab voluptatibus
+                                                                            perspiciatis error eligendi, accusamus
+                                                                            dolorum nulla repellat quis, consequatur
+                                                                            magnam sequi facere nisi quaerat distinctio
+                                                                            maxime natus aperiam placeat..</span>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">2</th>
+                                                <td>Lorem ipsum</td>
+                                                <td>
+                                                    <p class="para">Lorem ipsum dolor sit amet consectetur
+                                                        adipisicing elit.
+                                                        Ratione
+                                                        praesentium labore minus illo natus debitis ad itaque
+                                                        corporis
+                                                        iste saepe aspernatur tempora, velit laudantium nesciunt
+                                                        adipisci mollitia consequuntur deleniti nulla!</p>
+                                                </td>
+                                                <td>
+                                                    <div>
+                                                        <button type="button" class="btn btn-primary"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                                            <i class="bi bi-eye-fill"></i>
+                                                        </button>
+                                                        <div class="modal fade" id="exampleModalCenter" tabindex="-1"
+                                                            aria-labelledby="exampleModalCenterTitle"
+                                                            style="display: none;" aria-hidden="true">
+                                                            <div class="modal-dialog modal-dialog-centered">
+                                                                <div class="modal-content">
+                                                                    <div class="modal-body">
+                                                                        <span>Lorem ipsum dolor sit amet consectetur
+                                                                            adipisicing elit. Unde ab voluptatibus
+                                                                            perspiciatis error eligendi, accusamus
+                                                                            dolorum nulla repellat quis, consequatur
+                                                                            magnam sequi facere nisi quaerat distinctio
+                                                                            maxime natus aperiam placeat..</span>
+                                                                    </div>
+                                                                    <div class="modal-footer">
+                                                                        <button type="button" class="btn btn-secondary"
+                                                                            data-bs-dismiss="modal">Close</button>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <button type="button" class="btn btn-danger"
+                                                            data-bs-toggle="modal" data-bs-target="#exampleModalCenter">
+                                                            <i class="bi bi-trash-fill"></i>
+                                                        </button>
+                                                    </div>
+                                                </td>
+                                            </tr>
+
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <nav aria-label="Page navigation example" style="margin: 12px;">
+                                    <ul class="pagination pagination-primary pagin-border-primary justify-content-end">
+                                        <li class="page-item"><a class="page-link"
+                                                href="javascript:void(0)">Previous</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="javascript:void(0)">1</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="javascript:void(0)">2</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="javascript:void(0)">3</a>
+                                        </li>
+                                        <li class="page-item"><a class="page-link" href="javascript:void(0)">Next</a>
+                                        </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            class="col-md-12 footer-copyright d-flex flex-wrap align-items-center justify-content-between">
+                            <p class="mb-0 f-w-600">Copyright <span class="year-update">2024</span> © Lumetris</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+
+    <script src="assets/compiled/js/app.js"></script>
+    <script src="assets/compiled/js/script.js"></script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,283 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scene Frames - Lumetris</title>
+
+    <link rel="shortcut icon" href="./assets/static/images/logo/file.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/compiled/css/app.css">
+    <link rel="stylesheet" href="./assets/compiled/css/iconly.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div id="loader-content"></div>
+    </div>
+
+    <script src="assets/static/js/initTheme.js"></script>
+    <div id="app">
+        <div id="sidebar">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header position-relative">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="logo">
+                            <a href="index.html"><img src="./assets/static/images/logo/file.png" alt="Logo"
+                                    srcset=""></a>
+                        </div>
+                        <div class="sidebar-toggler  x">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+
+                        <li class="sidebar-item  ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item ">
+                            <a href="list.html" class='sidebar-link'>
+                                <i class="bi bi-file-person"></i>
+                                <span>Users</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item ">
+                            <a href="admin_user.html" class='sidebar-link'>
+                                <i class="bi bi-people"></i>
+                                <span>Admin Users</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item active ">
+                            <a href="post.html" class='sidebar-link'>
+                                <i class="bi bi-image"></i>
+                                <span>Scene Frames</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="how_tos.html" class='sidebar-link'>
+                                <i class="bi bi-collection-play"></i>
+                                <span>How-Tos</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="flag_content.html" class='sidebar-link'>
+                                <i class="bi bi-flag"></i>
+                                <span>Flagged Content</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="logs.html" class='sidebar-link'>
+                                <i class="bi bi-hourglass"></i>
+                                <span>Logs</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="tags.html" class='sidebar-link'>
+                                <i class="bi bi-tags"></i>
+                                <span>Tags</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="notification.html" class='sidebar-link'>
+                                <i class="bi bi-bell"></i>
+                                <span>Notifications</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-item  ">
+                            <a href="about-us.html" class='sidebar-link'>
+                                <i class="bi bi-info-circle"></i>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-item  ">
+                            <a href="terms-conditions.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-medical"></i>
+                                <span>Terms & Conditions</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="help-support.html" class='sidebar-link'>
+                                <i class="bi bi-question-circle"></i>
+                                <span>Help & Supports</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="privacy-policy.html" class='sidebar-link'>
+                                <i class="bi bi-shield-check"></i>
+                                <span>Privacy Policy</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="account-profile.html" class="sidebar-link">
+                                <i class="bi bi-person"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-sec">
+            <div class="container-fluid">
+                <div class="row position-relative px-4 pe-3 py-2 w-100 g-0">
+                    <a href="#" class="burger-btn d-block d-xl-none ">
+                        <i class="bi bi-justify fs-3"></i>
+                    </a>
+                    <div class="col-12 col-lg-12  d-flex justify-content-end align-items-center gap-3 ">
+                        <div class="notification-icon">
+                            <ul>
+                                <li> <i class="bi bi-bell"></i></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle d-flex justify-content-start align-items-center gap-2 position-relative pointer"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="profile-img">
+                                    <img src="assets/compiled/jpg/4.jpg" alt="" width="40px" height="40px"
+                                        class="rounded-circle">
+                                </div>
+                                <div class="profile-name text-start">
+                                    <h5 class="m-0">Sam Rick</h5>
+                                    <p class="m-0">Admin</p>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                 <li><a class="dropdown-item" href="account-profile.html"><i
+                                            class="bi bi-person me-1"></i> My Profile</a>
+                                </li>
+                                <li><a class="dropdown-item" href="auth-login.html"><i
+                                            class="bi bi-box-arrow-right me-1"></i> Log
+                                        Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+            <div class="page-heading d-flex align-items-center justify-content-between">
+                <h3>Scene Frames</h3>
+                <div class="d-flex gap-3 flex-wrap align-items-center ">
+                    <form action="">
+                        <div class="search-form">
+                            <a href="#"><i class="bi bi-search"></i></a>
+                            <input type="search" class="form-control" name="search" id="search" placeholder="Search...">
+                        </div>
+                    </form>
+                    <div class="dropdown">
+                        <a class="btn btn-secondary dropdown-toggle d-flex justify-content-start align-items-center gap-2 position-relative pointer"
+                            type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+                                class="bi bi-filter" viewBox="0 0 16 16">
+                                <path
+                                    d="M6 10.5a.5.5 0 0 1 .5-.5h3a.5.5 0 0 1 0 1h-3a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h7a.5.5 0 0 1 0 1h-7a.5.5 0 0 1-.5-.5m-2-3a.5.5 0 0 1 .5-.5h11a.5.5 0 0 1 0 1h-11a.5.5 0 0 1-.5-.5"
+                                    stroke="#ffffff" stroke-width="1" />
+                            </svg>filter
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                            <li><a class="dropdown-item" href="#">Daily</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Weekly</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#">Monthly</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="masonry">
+                        <div class="mItem position-relative">
+                            <a href="frames_detail.html">
+                                <img src="./assets/compiled/jpg/water.jpg">
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </a>
+                        </div>
+
+                        <div class="mItem position-relative">
+                            <a href="frames_detail.html">
+                                <img src="./assets/compiled/jpg/building.jpg">
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </a>
+                        </div>
+
+                        <div class="mItem position-relative">
+                            <a href="frames_detail.html">
+                                <img src="./assets/compiled/jpg/motorcycle.jpg">
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </a>
+                        </div>
+
+                        <div class="mItem position-relative">
+                            <a href="frames_detail.html">
+                                <img src="./assets/compiled/jpg/origami.jpg">
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </a>
+                        </div>
+
+                        <div class="mItem position-relative">
+                            <a href="frames_detail.html">
+                                <img src="./assets/compiled/jpg/architecture1.jpg   ">
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </a>
+                        </div>
+
+                        <div class="mItem position-relative">
+                            <a href="frames_detail.html">
+                                <img src="./assets/compiled/jpg/bg-mountain.jpg">
+                                <h5>Lorem ipsum dolor sit amet</h5>
+                            </a>
+                        </div>
+
+
+                    </div>
+                </div>
+            </div>
+
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            class="col-md-12 footer-copyright d-flex flex-wrap align-items-center justify-content-between">
+                            <p class="mb-0 f-w-600">Copyright <span class="year-update">2024</span> © Lumetris</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+
+    <script src="assets/compiled/js/app.js"></script>
+    <script src="assets/compiled/js/script.js"></script>
+</body>
+
+</html>

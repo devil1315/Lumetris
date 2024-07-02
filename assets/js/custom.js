@@ -1,6 +1,3 @@
-const currentYear = new Date().getFullYear();
-document.getElementById("year").innerText = currentYear;
-
 // $(function () {
 //   var loader = $("#loader-wrapper");
 //   setTimeout(function () {
@@ -161,3 +158,72 @@ document.querySelectorAll(".social-heart").forEach(function (element) {
 });
 
 // heart
+// Function to handle showing and hiding the modal based on screen width
+function handleModal() {
+  var modalElement = document.getElementById("exampleModalFullscreen");
+  var modal =
+    bootstrap.Modal.getInstance(modalElement) ||
+    new bootstrap.Modal(modalElement);
+
+  if (window.innerWidth < 992) {
+    modal.show();
+  } else {
+    modal.hide();
+  }
+}
+
+// Event listener for the mobile-search button click
+document
+  .getElementById("mobile-search")
+  .addEventListener("click", function (event) {
+    event.preventDefault();
+    if (window.innerWidth < 992) {
+      var modal = new bootstrap.Modal(
+        document.getElementById("exampleModalFullscreen")
+      );
+      modal.show();
+    }
+  });
+
+// Event listener for window resize
+window.addEventListener("resize", function () {
+  var modalElement = document.getElementById("exampleModalFullscreen");
+  var modal = bootstrap.Modal.getInstance(modalElement);
+
+  if (modal && window.innerWidth >= 992) {
+    modal.hide();
+  }
+});
+
+// Optional: Check screen size on initial load and hide modal if necessary
+document.addEventListener("DOMContentLoaded", function () {
+  if (window.innerWidth >= 992) {
+    var modalElement = document.getElementById("exampleModalFullscreen");
+    var modal =
+      bootstrap.Modal.getInstance(modalElement) ||
+      new bootstrap.Modal(modalElement);
+    modal.hide();
+  }
+});
+
+// copy
+function copyToClipboard(text) {
+  const tempInput = document.createElement("input");
+  tempInput.value = text;
+  document.body.appendChild(tempInput);
+  tempInput.select();
+  document.execCommand("copy");
+  document.body.removeChild(tempInput);
+}
+
+document.querySelectorAll(".note-clip").forEach(function (noteClip) {
+  noteClip.addEventListener("click", function (event) {
+    event.preventDefault();
+    const closestImg = noteClip.closest(".mItem").querySelector("img");
+    if (closestImg) {
+      copyToClipboard(closestImg.src);
+      // alert("Image source copied to clipboard: " + closestImg.src);
+    }
+  });
+});
+// copy

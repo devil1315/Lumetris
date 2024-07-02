@@ -352,7 +352,7 @@
             <hr class="hr-line">
             <div class="copyright">
                 <div class="copyright-text">
-                    <p>© <span id="year"></span> <a href="index.html">Lumeris</a>. All rights reserved</p>
+                    <p>© <span id="year"></span> <a href="index.html">Lumetris</a>. All rights reserved</p>
                 </div>
                 <div class="payment-card">
                     <a href="#">
@@ -476,7 +476,7 @@
                                         data-bs-target="#afteregister">Register</button>
                                 </div>
                                 <div class="mb-32">
-                                    <div class="or-divider">Or login with your socials</div>
+                                    <div class="or-divider">Or Register with your socials</div>
                                 </div>
 
                             </form>
@@ -636,6 +636,10 @@
                 eyeIcon.innerHTML = '<i class="far fa-eye-slash"></i>';
             }
         }
+    </script>
+    <script>
+        const currentYear = new Date().getFullYear();
+        document.getElementById("year").innerText = currentYear;
     </script>
 </body>
 
