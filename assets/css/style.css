@@ -1977,3 +1977,80 @@ button:focus-visible {
 .social-heart .fa-heart.fa-solid {
     color: var(--accent);
 }
+
+.back-btn div {
+    width: 32px;
+    height: 32px;
+    border-radius: 100px;
+    background: #FFFFFF1A;
+    border: 1px solid #404040;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back-btn div i {
+    color: #FFFFFF;
+    font-size: 14px !important;
+}
+
+.header-chat h4 {
+    font-size: 24px;
+    font-weight: 700;
+    color: #EFEFEF;
+}
+
+.messages h5 {
+    font-size: 16px;
+    font-weight: 700;
+    color: #FFFFFF;
+}
+
+.messages p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #DFDFDF;
+}
+
+.messages span {
+    font-size: 12px;
+    font-weight: 400;
+    color: #CFCFCF;
+}
+
+.lumetris-support {
+    background: #323232;
+}
+
+.lumetris-support i {
+    font-size: 8px;
+    color: #FE7200;
+}
+
+.chat-response {
+    width: 100%;
+    padding: 12px 20px 12px 20px;
+    border-radius: 8px;
+    background: #181818;
+    border: 1px solid #323232;
+    outline: none;
+    color: #CFCFCF;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.response-btn {
+    position: absolute;
+    top: 4px;
+    right: 15px;
+}
+
+.response-btn span {
+    color: #FFFFFF;
+    font-size: 28px !important;
+}
+
+.chat-container #scroll {
+    overflow: auto;
+    height: 75vh;
+}
