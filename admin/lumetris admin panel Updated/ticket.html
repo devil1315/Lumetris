@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flagged Content - Lumetris</title>
+    <title>Users - Lumetris</title>
     <link rel="shortcut icon" href="./assets/static/images/logo/file.png" type="image/x-icon">
     <link rel="stylesheet" href="./assets/compiled/css/app.css">
     <link rel="stylesheet" href="./assets/compiled/css/iconly.css">
@@ -66,7 +66,7 @@
                                 <span>How-Tos</span>
                             </a>
                         </li>
-                        <li class="sidebar-item active">
+                        <li class="sidebar-item  ">
                             <a href="flag_content.html" class='sidebar-link'>
                                 <i class="bi bi-flag"></i>
                                 <span>Flagged Content</span>
@@ -84,7 +84,7 @@
                                 <span>Tags</span>
                             </a>
                         </li>
-                        <li class="sidebar-item  ">
+                        <li class="sidebar-item  active">
                             <a href="ticket.html" class='sidebar-link'>
                                 <i class="bi bi-ticket-perforated"></i>
                                 <span>Support Tickets</span>
@@ -186,7 +186,7 @@
                 <div class="page-title">
                     <div class="row">
                         <div class="col-12 col-md-6 order-md-1 order-last mb-4">
-                            <h3>Flagged Content</h3>
+                            <h3>Support Tickets</h3>
                         </div>
                     </div>
                 </div>
@@ -199,30 +199,22 @@
                                         <thead>
                                             <tr>
                                                 <th scope="col">Sr no.</th>
-                                                <th scope="col">User details</th>
-                                                <th scope="col">Reported by</th>
-                                                <th scope="col">Flagged item</th>
-                                                <th scope="col">Disabled</th>
+                                                <th scope="col">Profile</th>
+                                                <th scope="col">Name</th>
+                                                <th scope="col">Username</th>
+                                                <th scope="col">Email</th>
+                                                <th scope="col">Action</th>
                                                 <th scope="col">Option</th>
                                             </tr>
                                         </thead>
                                         <tbody>
                                             <tr>
                                                 <th scope="row">1</th>
-                                                <td><img src="assets/compiled/jpg/3.jpg" alt="" width="40" height="40"
-                                                        class="rounded-circle me-2">Sizzle</td>
-                                                <td><img src="assets/compiled/jpg/4.jpg" alt="" width="40" height="40"
-                                                        class="rounded-circle me-2">David</td>
-                                                <td>
-                                                    <p class="para" style="max-width: 300px !important;">Lorem ipsum
-                                                        dolor sit
-                                                        amet consectetur adipisicing
-                                                        elit.
-                                                        Voluptate nisi exercitationem quasi nemo, natus earum sapiente
-                                                        deleniti nostrum adipisci neque, nihil distinctio deserunt
-                                                        consequuntur cupiditate! Sapiente reprehenderit expedita
-                                                        doloremque amet?</p>
-                                                </td>
+                                                <td><img src="assets/compiled/jpg/3.jpg" alt="" width="60px"
+                                                        class="rounded"></td>
+                                                <td>Sizzle</td>
+                                                <td>@sizzle01</td>
+                                                <td>sizzle@yomail.com</td>
                                                 <td>
                                                     <div class="form-check form-switch">
                                                         <input class="form-check-input border-0" type="checkbox"
@@ -233,7 +225,7 @@
                                                 </td>
                                                 <td>
                                                     <div>
-                                                        <a href="flagged-details.html" class="btn btn-primary"> <i
+                                                        <a href="user-details.html" class="btn btn-primary"> <i
                                                                 class="bi bi-eye-fill"></i></a>
 
                                                         <a href="#" class="btn btn-danger"> <i
@@ -244,14 +236,11 @@
                                             </tr>
                                             <tr>
                                                 <th scope="row">2</th>
-                                                <td><img src="assets/compiled/jpg/4.jpg" alt="" width="40" height="40"
-                                                        class="rounded-circle me-2">David</td>
-                                                <td><img src="assets/compiled/jpg/3.jpg" alt="" width="40" height="40"
-                                                        class="rounded-circle me-2">Sizzle</td>
-                                                <td>
-                                                    <img src="assets/compiled/jpg/architecture1.jpg" alt="" id="myImg"
-                                                        width="70" height="70" class="rounded">
-                                                </td>
+                                                <td><img src="assets/compiled/jpg/3.jpg" alt="" width="60px"
+                                                        class="rounded"></td>
+                                                <td>Jack Hammer</td>
+                                                <td>@jackh</td>
+                                                <td>hammerjack@yomail.com</td>
                                                 <td>
                                                     <div class="form-check form-switch">
                                                         <input class="form-check-input border-0" type="checkbox"
@@ -262,7 +251,7 @@
                                                 </td>
                                                 <td>
                                                     <div>
-                                                        <a href="flagged-details.html" class="btn btn-primary"> <i
+                                                        <a href="user-details.html" class="btn btn-primary"> <i
                                                                 class="bi bi-eye-fill"></i></a>
 
                                                         <a href="#" class="btn btn-danger"> <i
@@ -272,7 +261,6 @@
                                                 </td>
                                             </tr>
 
-
                                         </tbody>
                                     </table>
                                 </div>
@@ -281,7 +269,8 @@
                                         <li class="page-item"><a class="page-link"
                                                 href="javascript:void(0)">Previous</a>
                                         </li>
-                                        <li class="page-item me-1"><a class="page-link" href="javascript:void(0)">1</a>
+                                        <li class="page-item me-1 active"><a class="page-link"
+                                                href="javascript:void(0)">1</a>
                                         </li>
                                         <li class="page-item me-1"><a class="page-link" href="javascript:void(0)">2</a>
                                         </li>
@@ -308,33 +297,12 @@
                 </footer>
             </div>
         </div>
-        <div id="myModal" class="modal-preview" style="display: none;">
-            <span class="close">×</span>
-            <img class="modal-content" id="img01" src="">
-            <div id="caption"></div>
-        </div>
+
         <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
         <script src="assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
         <script src="assets/compiled/js/app.js"></script>
         <script src="assets/compiled/js/script.js"></script>
-        <script>
-            $(document).ready(function () {
-                var modal = document.getElementById("myModal");
-                var img = document.getElementById("myImg");
-                var modalImg = document.getElementById("img01");
-                var captionText = document.getElementById("caption");
-                $(document.body).on('click', '#myImg', function (event) {
-                    modal.style.display = "block";
-                    modalImg.src = this.src;
-                    captionText.innerHTML = this.alt;
-                });
-                var span = document.getElementsByClassName("close")[0];
-                span.onclick = function () {
-                    modal.style.display = "none";
-                }
-            });
-        </script>
 </body>
 
 </html>
