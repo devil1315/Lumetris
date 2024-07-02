@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - Lumetris</title>
+
+    <link rel="shortcut icon" href="./assets/static/images/logo/file.png" type="image/x-icon">
+
+    <link rel="stylesheet" href="./assets/compiled/css/app.css">
+</head>
+
+<body>
+    <script src="assets/static/js/initTheme.js"></script>
+
+    <div id="loader">
+        <div id="loader-content"></div>
+    </div>
+
+
+    <div id="app">
+        <div id="sidebar">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header position-relative">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="logo">
+                            <a href="index.html"><img src="./assets/static/images/logo/file.png" alt="Logo"
+                                    srcset=""></a>
+                        </div>
+                        <div class="sidebar-toggler  x">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+
+                        <li class="sidebar-item  ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+                        
+                        <li class="sidebar-item ">
+                            <a href="list.html" class='sidebar-link'>
+                                <i class="bi bi-file-person"></i>
+                                <span>Users</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="post.html" class='sidebar-link'>
+                                <i class="bi bi-image"></i>
+                                <span>Scene Frames</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="how_tos.html" class='sidebar-link'>
+                                <i class="bi bi-collection-play"></i>
+                                <span>How-Tos</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="notification.html" class='sidebar-link'>
+                                <i class="bi bi-bell"></i>
+                                <span>Notifications</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-item  ">
+                            <a href="about-us.html" class='sidebar-link'>
+                                <i class="bi bi-info-circle"></i>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-item  ">
+                            <a href="terms-conditions.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-medical"></i>
+                                <span>Terms & Conditions</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="help-support.html" class='sidebar-link'>
+                                <i class="bi bi-question-circle"></i>
+                                <span>Help & Supports</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="privacy-policy.html" class='sidebar-link'>
+                                <i class="bi bi-shield-check"></i>
+                                <span>Privacy Policy</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item active">
+                            <a href="account-profile.html" class="sidebar-link">
+                                <i class="bi bi-person"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="profile-sec">
+            <div class="container-fluid">
+                <div class="row position-relative px-4 pe-3 py-2 w-100 g-0">
+                    <a href="#" class="burger-btn d-block d-xl-none ">
+                        <i class="bi bi-justify fs-3"></i>
+                    </a>
+                    <div class="col-12 col-lg-12  d-flex justify-content-end align-items-center gap-3 ">
+                        <div class="notification-icon">
+                            <ul>
+                                <li> <i class="bi bi-bell"></i></li>
+                            </ul>
+                        </div>
+
+                        <div
+                            class="profile-box d-flex justify-content-start align-items-center gap-2 position-relative pointer">
+                            <div class="profile-img">
+                                <img src="assets/compiled/jpg/4.jpg" alt="" width="40px" height="40px"
+                                    class="rounded-circle">
+                            </div>
+                            <div class="profile-name">
+                                <h5 class="m-0">Sam Rick</h5>
+                                <p class="m-0">Actor</p>
+                            </div>
+                            <div id="dropdown" style="display: none;">
+                                <div
+                                    class="profile-account d-flex justify-content-start align-items-start flex-column gap-1">
+                                    <a href="account-profile.html"><i class="bi bi-person"></i>My Profile</a>
+                                    <a href="auth-login.html"><i class="bi bi-box-arrow-right"></i>Log Out</a>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+
+        <div id="main">
+
+            <div class="page-heading">
+                <div class="page-title">
+                    <div class="row">
+                        <div class="col-12 col-md-6 order-md-1 order-last mb-4">
+                            <h3>Account Profile</h3>
+                            <p class="text-subtitle" style="color: #fff;">A page where users can change profile
+                                information</p>
+                        </div>
+
+                    </div>
+                </div>
+                <section class="section">
+                        <div class="row">
+                            <div class="col-12 col-lg-4">
+                                <div class="card mb-2">
+                                    <div class="card-body p-3">
+                                        <div class="d-flex justify-content-center align-items-center flex-column">
+                                            <div class="avatar avatar-2xl">
+                                                <img src="./assets/compiled/jpg/2.jpg" alt="Avatar" class="img-profile">
+                                            </div>
+
+                                            <h3 class="mt-2 mb-0">John Doe</h3>
+                                            <p class="text-small m-0">@johnDoe1</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="card">
+                                    <div class="card-body p-3">
+                                        <div class="d-flex justify-content-left align-items-left flex-column">
+                                            <h5 class="mt-2 mb-0">Bio</h3>
+                                                <p class="text-small m-0">Lorem ipsum dolor, sit amet consectetur
+                                                    adipisicing elit. Ipsum nobis quam aspernatur ab neque temporibus
+                                                    tempora, deleniti nostrum excepturi dignissimos possimus, nisi, autem
+                                                    explicabo ratione aut dolorem eum! In, nostrum!</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-8">
+
+                                <div class="card">
+
+                                    <div class="card-body">
+
+                                        <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-home" type="button" role="tab"
+                                                    aria-controls="pills-home" aria-selected="true">Edit Profile</button>
+                                            </li>
+                                            <li class="nav-item" role="presentation">
+                                                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill"
+                                                    data-bs-target="#pills-profile" type="button" role="tab"
+                                                    aria-controls="pills-profile" aria-selected="false">Change
+                                                    Password</button>
+                                            </li>
+
+                                        </ul>
+                                        <div class="tab-content" id="pills-tabContent">
+                                            <div class="tab-pane fade show active" id="pills-home" role="tabpanel"
+                                                aria-labelledby="pills-home-tab">
+                                                <div class="avatar avatar-2xl">
+                                                    <img src="./assets/compiled/jpg/2.jpg" alt="Avatar" class="edit-img">
+
+                                                    <label for="upload-pic">
+                                                        <div class="image">
+                                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                                fill="currentColor" class="bi bi-pencil-square"
+                                                                viewBox="0 0 16 16">
+                                                                <path
+                                                                    d="M15.502 1.94a.5.5 0 0 1 0 .706L14.459 3.69l-2-2L13.502.646a.5.5 0 0 1 .707 0l1.293 1.293zm-1.75 2.456-2-2L4.939 9.21a.5.5 0 0 0-.121.196l-.805 2.414a.25.25 0 0 0 .316.316l2.414-.805a.5.5 0 0 0 .196-.12l6.813-6.814z" />
+                                                                <path fill-rule="evenodd"
+                                                                    d="M1 13.5A1.5 1.5 0 0 0 2.5 15h11a1.5 1.5 0 0 0 1.5-1.5v-6a.5.5 0 0 0-1 0v6a.5.5 0 0 1-.5.5h-11a.5.5 0 0 1-.5-.5v-11a.5.5 0 0 1 .5-.5H9a.5.5 0 0 0 0-1H2.5A1.5 1.5 0 0 0 1 2.5z" />
+                                                            </svg>
+                                                        </div>
+                                                        <input type="file" name="profile-pic" id="upload-pic" hidden>
+                                                    </label>
+                                                </div>
+                                                <div class="row mb-0 mt-2">
+                                                    <div class="form-group col-lg-6">
+                                                        <label class="col-form-label">First Name</label>
+                                                        <input class="form-control" type="text" id="fname" name="fname"
+                                                            value="" placeholder="Enter your name">
+                                                    </div>
+                                                    <div class="form-group col-lg-6">
+                                                        <label class="col-form-label">Username</label>
+                                                        <input class="form-control" type="text" id="lname" name="lname"
+                                                            value="" placeholder="Enter your username">
+                                                    </div>
+                                                </div>
+
+                                                <div class="row mb-0">
+                                                    <div class="form-group col-lg-6">
+                                                        <label class="col-form-label">Email</label>
+                                                        <input class="form-control" type="email" id="email" name="email"
+                                                            value="" placeholder="Enter your email">
+                                                    </div>
+                                                    <div class="form-group col-lg-6">
+                                                        <label class="col-form-label">Phone Number</label>
+                                                        <input class="form-control" type="text" id="phone" name="phone"
+                                                            value="" placeholder="Enter your phone number">
+                                                    </div>
+                                                </div>
+
+                                                <div class="form-group mb-0">
+                                                    <label class="col-form-label">Bio</label>
+                                                    <textarea name="bio" id="bio" class="form-control textarea" rows="6"
+                                                        placeholder="About yourself"></textarea>
+                                                </div>
+
+                                                <div class="form-group mt-3 d-flex justify-content-end">
+                                                    <button type="submit" class="btn btn-primary">Save</button>
+                                                </div>
+                                            </div>
+
+
+                                            <div class="tab-pane fade" id="pills-profile" role="tabpanel"
+                                                aria-labelledby="pills-profile-tab">
+                                               
+                                                    <form action="#" method="get">
+                                                        <div class="form-group my-2">
+                                                            <label for="current_password" class="form-label">Current
+                                                                Password</label>
+                                                            <div class="password-box position-relative">
+
+                                                                <input type="password" name="current_password"
+                                                                    id="opassword" class="form-control"
+                                                                    placeholder="Enter your current password" value="">
+                                                                <span id="eyeIconId1"
+                                                                    onclick="togglePasswordVisibility('opassword', 'eyeIconId1')">
+                                                                    <i class="bi bi-eye-slash"></i></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group my-2">
+                                                            <label for="password" class="form-label">New Password</label>
+                                                            <div class="password-box position-relative"
+                                                                onclick="togglePasswordVisibility('npassword', 'eyeIconId2')">
+
+                                                                <input type="password" name="npassword" id="password"
+                                                                    class="form-control" placeholder="Enter new password"
+                                                                    value="">
+                                                                <span id="eyeIconId2"
+                                                                    onclick="togglePasswordVisibility('cpassword', 'eyeIconId2')">
+                                                                    <i class="bi bi-eye-slash" ></i></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group my-2">
+                                                            <label for="confirm_password" class="form-label">Confirm
+                                                                Password</label>
+                                                            <div class="password-box position-relative">
+
+                                                                <input type="password" name="confirm_password"
+                                                                    id="cpassword" class="form-control"
+                                                                    placeholder="Enter confirm password" value="">
+                                                                <span id="eyeIconId3"
+                                                                    onclick="togglePasswordVisibility('cpassword', 'eyeIconId3')">
+                                                                    <i class="bi bi-eye-slash" ></i></span>
+                                                            </div>
+                                                        </div>
+
+                                                        <div class="form-group mt-3 d-flex justify-content-end">
+                                                            <button type="submit" class="btn btn-primary">Save
+                                                                Changes</button>
+                                                        </div>
+                                                    </form>
+                                                
+                                            </div>
+
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                </section>
+            </div>
+
+            <footer class="footer">
+                <div class="container-fluid">
+                    <div class="row">
+                        <div
+                            class="col-md-12 footer-copyright d-flex flex-wrap align-items-center justify-content-between">
+                            <p class="mb-0 f-w-600">Copyright <span class="year-update">2024</span> © Lumetris</p>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+
+
+    <script src="assets/compiled/js/app.js"></script>
+    <script src="assets/compiled/js/script.js"></script>
+
+    <script>
+        function togglePasswordVisibility(inputId, eyeIconId) {
+            const passwordInput = document.getElementById(inputId);
+            const eyeIcon = document.getElementById(eyeIconId);
+
+            if (passwordInput.type == 'password') {
+                passwordInput.type = 'text';
+                eyeIcon.innerHTML = '<i class="bi bi-eye"></i>';
+            } else {
+                passwordInput.type = 'password';
+                eyeIcon.innerHTML = '<i class="bi bi-eye-slash"></i>';
+            }
+        }
+    </script>
+
+
+
+</body>
+
+</html>
