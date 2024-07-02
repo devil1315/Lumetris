@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Users - Lumetris</title>
+    <link rel="shortcut icon" href="./assets/static/images/logo/file.png" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/compiled/css/app.css">
+    <link rel="stylesheet" href="./assets/compiled/css/iconly.css">
+</head>
+
+<body>
+
+    <div id="loader">
+        <div id="loader-content"></div>
+    </div>
+
+    <script src="assets/static/js/initTheme.js"></script>
+    <div id="app">
+        <div id="sidebar">
+            <div class="sidebar-wrapper active">
+                <div class="sidebar-header position-relative">
+                    <div class="d-flex justify-content-between align-items-center">
+                        <div class="logo">
+                            <a href="index.html"><img src="./assets/static/images/logo/file.png" alt="Logo"
+                                    srcset=""></a>
+                        </div>
+                        <div class="sidebar-toggler  x">
+                            <a href="#" class="sidebar-hide d-xl-none d-block"><i class="bi bi-x bi-middle"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sidebar-menu">
+                    <ul class="menu">
+
+                        <li class="sidebar-item  ">
+                            <a href="index.html" class='sidebar-link'>
+                                <i class="bi bi-grid-fill"></i>
+                                <span>Dashboard</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item ">
+                            <a href="list.html" class='sidebar-link'>
+                                <i class="bi bi-file-person"></i>
+                                <span>Users</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item ">
+                            <a href="admin_user.html" class='sidebar-link'>
+                                <i class="bi bi-people"></i>
+                                <span>Admin Users</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="post.html" class='sidebar-link'>
+                                <i class="bi bi-image"></i>
+                                <span>Scene Frames</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="how_tos.html" class='sidebar-link'>
+                                <i class="bi bi-collection-play"></i>
+                                <span>How-Tos</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="flag_content.html" class='sidebar-link'>
+                                <i class="bi bi-flag"></i>
+                                <span>Flagged Content</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="logs.html" class='sidebar-link'>
+                                <i class="bi bi-hourglass"></i>
+                                <span>Logs</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="tags.html" class='sidebar-link'>
+                                <i class="bi bi-tags"></i>
+                                <span>Tags</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  active">
+                            <a href="ticket.html" class='sidebar-link'>
+                                <i class="bi bi-ticket-perforated"></i>
+                                <span>Support Tickets</span>
+                            </a>
+                        </li>
+                        <li class="sidebar-item  ">
+                            <a href="notification.html" class='sidebar-link'>
+                                <i class="bi bi-bell"></i>
+                                <span>Notifications</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-item  ">
+                            <a href="about-us.html" class='sidebar-link'>
+                                <i class="bi bi-info-circle"></i>
+                                <span>About Us</span>
+                            </a>
+                        </li>
+
+
+                        <li class="sidebar-item  ">
+                            <a href="terms-conditions.html" class='sidebar-link'>
+                                <i class="bi bi-file-earmark-medical"></i>
+                                <span>Terms & Conditions</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="help-support.html" class='sidebar-link'>
+                                <i class="bi bi-question-circle"></i>
+                                <span>Help & Supports</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item  ">
+                            <a href="privacy-policy.html" class='sidebar-link'>
+                                <i class="bi bi-shield-check"></i>
+                                <span>Privacy Policy</span>
+                            </a>
+                        </li>
+
+                        <li class="sidebar-item">
+                            <a href="account-profile.html" class="sidebar-link">
+                                <i class="bi bi-person"></i>
+                                <span>Profile</span>
+                            </a>
+                        </li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <div class="profile-sec">
+            <div class="container-fluid">
+                <div class="row position-relative px-4 pe-3 py-2 w-100 g-0">
+                    <a href="#" class="burger-btn d-block d-xl-none ">
+                        <i class="bi bi-justify fs-3"></i>
+                    </a>
+                    <div class="col-12 col-lg-12  d-flex justify-content-end align-items-center gap-3 ">
+                        <div class="notification-icon">
+                            <ul>
+                                <li> <i class="bi bi-bell"></i></li>
+                            </ul>
+                        </div>
+
+                        <div class="dropdown">
+                            <a class="btn btn-secondary dropdown-toggle d-flex justify-content-start align-items-center gap-2 position-relative pointer"
+                                type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                                <div class="profile-img">
+                                    <img src="assets/compiled/jpg/4.jpg" alt="" width="40px" height="40px"
+                                        class="rounded-circle">
+                                </div>
+                                <div class="profile-name text-start">
+                                    <h5 class="m-0">Sam Rick</h5>
+                                    <p class="m-0">Admin</p>
+                                </div>
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                                <li><a class="dropdown-item" href="account-profile.html"><i
+                                            class="bi bi-person me-1"></i> My Profile</a>
+                                </li>
+                                <li><a class="dropdown-item" href="auth-login.html"><i
+                                            class="bi bi-box-arrow-right me-1"></i> Log
+                                        Out</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div id="main">
+
+            <div class="page-heading">
+                <div class="page-title">
+                    <div class="row">
+                        <div
+                            class="col-12 order-md-1 order-last mb-4 d-flex align-items-center justify-content-between">
+                            <h3>Need help creating a scene frame</h3>
+                            <a href="ticket.html" class="btn btn-primary">Back</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-12 col-sm-12 col-xxl-12 scroll-content">
+                        <div class="card m-0" style="background: none;">
+                            <div class="row flex-column">
+                                <div class="card-body user-chat col-md-12 ">
+                                    <div class="name d-flex align-items-center justify-content-between">
+                                        <h5 class="m-0">You</h5>
+                                        <p class="m-0">2d ago</p>
+                                    </div>
+                                    <div class="chat mt-3">
+                                        <p style="color: #DFDFDF;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Aenean id diam magna. Donec molestie ornare mollis. In at imperdiet
+                                            lacus. Curabitur id est aliquet ligula accumsan lacinia id id orci. Cras id
+                                            nisl varius, pellentesque velit a, dictum ipsum. Aliquam erat volutpat.
+                                            Curabitur at elit in augue fermentum ornare non sed ligula. Morbi rutrum
+                                            ullamcorper ipsum. Nunc ornare ligula id accumsan molestie. Nulla facilisi.
+                                            Donec ut purus quis nisl cursus fermentum vel sed massa. Etiam sed commodo
+                                            arcu, ac imperdiet lectus. Mauris id arcu ipsum. Proin cursus enim eget enim
+                                            molestie vehicula. Nunc sem felis, fringilla ut mi ut, semper tincidunt
+                                            libero.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="card-body admin-chat col-md-12" style="background: #1e1e1e;">
+                                    <div class="admin-name d-flex align-items-center justify-content-between">
+                                        <div class="wrappper-dot d-flex align-items-center gap-2">
+                                            <i class="bi bi-circle-fill d-flex align-items-center"></i>
+                                            <h5 class="m-0">Lumetris Support</h5>
+                                        </div>
+                                        <p class="m-0">2d ago</p>
+                                    </div>
+                                    <div class="admin-chat mt-3">
+                                        <p style="color: #DFDFDF;">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                            elit. Aenean id diam magna. Donec molestie ornare mollis. In at imperdiet
+                                            lacus. Curabitur id est aliquet ligula accumsan lacinia id id orci. Cras id
+                                            nisl varius, pellentesque velit a, dictum ipsum. Aliquam erat volutpat.
+                                            Curabitur at elit in augue fermentum ornare non sed ligula. Morbi rutrum
+                                            ullamcorper ipsum. Nunc ornare ligula id accumsan molestie. Nulla facilisi.
+                                            Donec ut purus quis nisl cursus fermentum vel sed massa. Etiam sed commodo
+                                            arcu, ac imperdiet lectus. Mauris id arcu ipsum. Proin cursus enim eget enim
+                                            molestie vehicula. Nunc sem felis, fringilla ut mi ut, semper tincidunt
+                                            libero.
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row mt-4">
+                    <div class="col-xl-12 col-sm-12 col-xxl-12 p-0">
+                        <div class="card m-0" style="background: none;">
+                            <div class="chat-box d-flex align-items-center w-100 justify-content-between gap-3">
+                                <div class=" p-0 ">
+                                    <div class="attachment-icon">
+                                        <label for="attachment"
+                                            class="attachment d-flex align-items-center justify-content-center rounded-circle">
+                                            <i class="bi bi-paperclip d-flex align-items-center"></i>
+                                        </label>
+                                        <input type="file" hidden id="attachment">
+                                    </div>
+                                </div>
+
+                                <div class=" p-0 d-flex align-items-center rounded-3 position-relative w-100"
+                                    style="background: #1e1e1e;">
+                                    <div
+                                        class="attachment-input w-100 d-flex align-items-center justify-content-between px-2">
+                                        <input type="text" placeholder="Add a response..." class="form-control">
+                                        <i class="bi bi-send-fill d-flex align-items-center"></i>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <footer class="footer">
+                    <div class="container-fluid">
+                        <div class="row">
+                            <div
+                                class="col-md-12 footer-copyright d-flex flex-wrap align-items-center justify-content-between">
+                                <p class="mb-0 f-w-600">Copyright <span class="year-update">2024</span> © Lumetris
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.7/dist/umd/popper.min.js"></script>
+        <script src="assets/extensions/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+        <script src="assets/compiled/js/app.js"></script>
+        <script src="assets/compiled/js/script.js"></script>
+</body>
+
+</html>

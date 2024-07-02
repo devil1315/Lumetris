@@ -25006,19 +25006,64 @@ select.custom-select:focus-visible {
     outline: none;
 }
 
-.custom-select option{
+.custom-select option {
     color: #212529;
     background-color: #fff;
     width: 200px;
 }
 
-.input-group{
+.input-group {
     background: #1e1e1e;
-    border: none; 
+    border: none;
     padding-inline: .75rem;
-    padding-block: .75rem; 
+    padding-block: .75rem;
 }
 
-.input-group:active{
-    border: none !important;  
+.input-group:active {
+    border: none !important;
+}
+
+.admin-name i {
+    width: auto;
+    height: auto;
+    font-size: 8px;
+    color: #fe7200;
+}
+
+.attachment {
+    width: 55px;
+    height: 55px;
+    background: #1e1e1e;
+}
+
+.attachment i {
+    font-size: 24px;
+    color: #fff;
+    width: auto;
+    height: auto;
+}
+
+.attachment-input input {
+    background: none;
+    border: none;
+    color: #fff;
+    width: 100%;
+}
+
+.attachment-input i {
+    font-size: 22px;
+    color: #fff;
+    width: auto;
+    height: auto;
+    transform: rotate(45deg);
+    margin-right: 15px;
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+.scroll-content{
+    overflow-y: scroll;
+    height: 60vh;
 }
